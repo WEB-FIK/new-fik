@@ -29,19 +29,19 @@ function CarouselHomepage() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image src={TwoPersons} alt="Rektorat UPN" role="img" className="w-full h-[320px]" />
+          <Image src={TwoPersons} alt="Rektorat UPN" role="img" className="w-full h-[320px] md:h-[745px]" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={TwoPersons} alt="Rektorat UPN" role="img" className="w-full h-[320px]" />
+          <Image src={TwoPersons} alt="Rektorat UPN" role="img" className="w-full h-[320px] md:h-[745px]" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={TwoPersons} alt="Rektorat UPN" role="img" className="w-full h-[320px]" />
+          <Image src={TwoPersons} alt="Rektorat UPN" role="img" className="w-full h-[320px] md:h-[745px]" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={TwoPersons} alt="Rektorat UPN" role="img" className="w-full h-[320px]" />
+          <Image src={TwoPersons} alt="Rektorat UPN" role="img" className="w-full h-[320px] md:h-[745px]" />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={TwoPersons} alt="Rektorat UPN" role="img" className="w-full h-[320px]" />
+          <Image src={TwoPersons} alt="Rektorat UPN" role="img" className="w-full h-[320px] md:h-[745px]" />
         </SwiperSlide>
       </Swiper>
     </section>
