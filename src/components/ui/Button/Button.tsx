@@ -13,7 +13,7 @@ function Button({ text, path, bgColor, width = "100px", variant = "primary" }: B
   const baseClasses = `text-center rounded-[4px] h-[50px] flex items-center justify-center px-4`;
   
   const variantClasses = {
-    primary: `bg-${bgColor} text-white`,
+    primary: 'bg-primary-500 text-white',
     whiteWithPrimaryBorder: `bg-white border border-primary-500 text-primary-500`,
   };
 

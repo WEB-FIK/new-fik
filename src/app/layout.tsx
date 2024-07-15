@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-
-const plusJakartaSans = Plus_Jakarta_Sans({ weight: "400", subsets: ["latin"] });
+import Navbar from "@/components/ui/Navbar/Navbar";
+const plusJakartaSans = Plus_Jakarta_Sans({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Fakultas Ilmu Komputer",
@@ -17,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={plusJakartaSans.className}>{children}</body>
+      <body className={`${plusJakartaSans.className} bg-white`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

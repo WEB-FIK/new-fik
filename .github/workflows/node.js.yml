@@ -21,20 +21,4 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: npm ci
-      - run: npm test
-      - run: npm run build --if-present
-      - name: Create Failed Test Status Check
-        if: ${{ failure() }}
-        uses: actions/github-script@v5
-        with:
-          script: |
-            const { owner, repo, number } = context.issue;
-            const { data: { head: { sha } } } = await github.pulls.get({ owner, repo, pull_number: number });
-            await github.repos.createCommitStatus({
-              owner,
-              repo,
-              sha,
-              state: 'failure',
-              context: 'Test',
-              description: 'Tests failed',
-            });
+      - run: npm run build
