@@ -5,7 +5,16 @@ import amdocs from "../../../../public/images/amdocs.webp";
 import ECCouncil from "../../../../public/images/ECCouncil.webp";
 import MaxyAcademy from "../../../../public/images/MaxyAcademy.webp";
 import Multimatics from "../../../../public/images/Multimatics.webp";
-import UnivBinaDarma from "../../../../public/images/UnivBinaDarma.webp"; // Corrected image path
+import UnivBinaDarma from "../../../../public/images/UnivBinaDarma.webp";
+import DiskominfoDepok from "../../../../public/images/DiskominfoDepok.webp";
+import SarasSuburAbadi from "../../../../public/images/SarasSuburAbadi.webp";
+import Undip from "../../../../public/images/Undip.webp";
+import Untirta from "../../../../public/images/Untirta.webp";
+import SarasGroup from "../../../../public/images/SarasGroup.webp";
+import Huawei from "../../../../public/images/Huawei.webp";
+import SariTeknologi from "../../../../public/images/SariTeknologi.webp";
+
+
 
 function Partner() {
   const partnerImagesTop = [
@@ -15,6 +24,16 @@ function Partner() {
     MaxyAcademy,
     Multimatics,
     UnivBinaDarma,
+  ];
+
+  const partnerImagesBot = [
+    DiskominfoDepok,
+    Undip,
+    Untirta,
+    SarasGroup,
+    Huawei,
+    SariTeknologi,
+    SarasSuburAbadi,
   ];
 
   return (
@@ -33,9 +52,9 @@ function Partner() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center space-y-5"> {/* Center the slider */}
+      <div className="flex flex-col items-center justify-center space-y-5">
         <PartnersSlider images={partnerImagesTop} />
-        <PartnersSlider images={partnerImagesTop} direction="right"/>
+        <PartnersSlider images={partnerImagesBot} direction="right"/>
       </div>
     </section>
   );

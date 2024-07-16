@@ -1,10 +1,11 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import Clock from "../../../../public/icons/Clock.svg"
-import Location from "../../../../public/icons/Location.svg"
+import ClockIcon from "../../../components/Icons/Clock";
+import LocationIcon from "../../../components/Icons/Location";  
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface AgendaProps {
-  image: StaticImageData;
+  image: StaticImport | StaticImageData;
   AgendaDate: string;
   AgendaMonth: string;
   AgendaTitle: string;
@@ -33,12 +34,12 @@ function AgendaCard({
         <div className="space-y-3">
           <p className="text-[18px] font-semibold">{AgendaTitle}</p>
           <div className="flex items-center space-x-2">
-            <Image src={Clock} alt="agenda" />
+            <ClockIcon/>
             <p className="text-[14px] text-[#6B7280] font-semibold">{AgendaHour}</p>
           </div>
 
           <div className="flex items-center space-x-2">
-            <Image src={Location} alt="agenda" />
+            <LocationIcon/>
             <p className="text-[14px] text-[#6B7280] font-semibold pl-1">{AgendaLocation}</p>
           </div>
         </div>

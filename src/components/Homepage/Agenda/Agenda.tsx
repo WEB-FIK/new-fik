@@ -63,15 +63,25 @@ function Agenda() {
       </div>
       </div>
 
-      <div className="w-full flex justify-center items-center md:flex md:justify-center">
-        <Button
-          text="Agenda lainnya"
-          path="/agenda"
-          bgColor="primary-500"
-          width="120%"
-          variant="whiteWithPrimaryBorder"
-        />
-      </div>
+      <div className="hidden md:block w-full md:flex md:justify-center md:pt-5">
+          <Button
+            text="Agenda lainnya"
+            path="/berita"
+            bgColor="primary-500"
+            variant="whiteWithPrimaryBorder"
+            width="427px"
+          />
+        </div>
+
+        <div className="block md:hidden w-full md:flex md:justify-center md:pt-5">
+          <Button
+            text="Agenda lainnya"
+            path="/berita"
+            bgColor="primary-500"
+            variant="whiteWithPrimaryBorder"
+            width="100%"
+          />
+        </div>
     </section>
   );
 }

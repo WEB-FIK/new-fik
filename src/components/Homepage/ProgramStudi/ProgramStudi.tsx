@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import S1Informatika from "../../../../public/icons/S1Informatika.webp";
-import S1Sisfor from "../../../../public/icons/S1Sisfor.webp";
-import D3Sisfor from "../../../../public/icons/D3Sisfor.webp";
-import S1SainsData from "../../../../public/icons/S1SainsData.webp";
+import S1Informatika from "../../../../public/icons/S1Informatika.svg";
+import S1Sisfor from "../../../../public/icons/S1Sisfor.svg";
+import D3Sisfor from "../../../../public/icons/D3Sisfor.svg";
+import S1SainsData from "../../../../public/icons/S1SainsData.svg";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -54,18 +54,18 @@ export default function ProgramStudi() {
             deskripsi="Menggabungkan teknologi dan manajemen untuk mengoptimalkan solusi informasi di organisasi."
           />
         </div>
-        <div data-aos="fade-down">
-          <ProgramStudiCard
-            icon={D3Sisfor}
-            programStudi="D3 Sistem Informasi"
-            deskripsi="Dapatkan keterampilan praktis untuk mendukung dan mengelola sistem informasi dalam berbagai lingkungan bisnis."
-          />
-        </div>
         <div data-aos="fade-left">
           <ProgramStudiCard
             icon={S1SainsData}
             programStudi="S1 Sains Data"
             deskripsi="Kuasai analisis data untuk mengubah data menjadi wawasan berharga bagi pengambilan keputusan."
+          />
+        </div>
+        <div data-aos="fade-down">
+          <ProgramStudiCard
+            icon={D3Sisfor}
+            programStudi="D3 Sistem Informasi"
+            deskripsi="Dapatkan keterampilan praktis untuk mendukung dan mengelola sistem informasi dalam berbagai lingkungan bisnis."
           />
         </div>
       </div>
