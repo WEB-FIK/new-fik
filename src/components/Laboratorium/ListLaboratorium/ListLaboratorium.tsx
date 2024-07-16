@@ -1,0 +1,201 @@
+"use client";
+
+import React from "react";
+import ListLaboratoriumCard from "@/components/ui/ListLaboratoriumCard/ListLaboratoriumCard";
+import SekretariatLaboratoriumImage from "../../../../public/images/SekretariatLaboratorium.webp";
+import ProgrammingLabImage from "../../../../public/images/ProgrammingLabImage.png";
+import CyberSecurityLabImage from "../../../../public/images/CyberSecurityLabImage.png";
+import ArtificialIntelligenceLabImage from "../../../../public/images/ArtificialIntelligenceLabImage.png";
+import BusinessIntelligenceLabImage from "../../../../public/images/BusinessIntelligenceLabImage.png";
+import DatabaseLabImage from "../../../../public/images/DatabaseLabImage.png";
+import IOTLabImage from "../../../../public/images/IOTLabImage.png";
+import DataMiningLabImage from "../../../../public/images/DataMiningLabImage.png";
+
+// import "aos/dist/aos.css";
+// import { useEffect } from "react";
+// import AOS from "aos";
+
+function ListLaboratorium() {
+//   useEffect(() => {
+//     AOS.init({duration: 1000});
+//   }, []);
+  const sekretariatLabDetails = {
+    image: SekretariatLaboratoriumImage,
+    LabName: "Sekretariat Laboratorium",
+    LabHead: "I Wayan Widi Pradnyana, M.TI",
+    LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
+    LabDesc:
+      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+    LabFunctions: [
+      "Administration and Management",
+      "Coordination of Laboratory Activities",
+      "Service and Technical Support",
+      "Development and Research",
+    ], // Add actual functions here
+  };
+
+  const programmingLabDetails = {
+    image: ProgrammingLabImage,
+    LabName: "Lab Programming",
+    LabHead: "I Wayan Widi Pradnyana, M.TI",
+    LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
+    LabDesc:
+      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+    LabFunctions: [
+      "Software and Application Development",
+      "Technical Support and Troubleshooting",
+      "Operating Systems",
+      "Development and Research",
+    ], // Add actual functions here
+  };
+
+  const CyberSecurityLabDetails = {
+    image: CyberSecurityLabImage,
+    LabName: "Lab Cybersecurity",
+    LabHead: "I Wayan Widi Pradnyana, M.TI",
+    LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
+    LabDesc:
+      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+    LabFunctions: [
+      "Network Security",
+      "Ethical Hacking",
+      "Cyber Defense Strategies",
+      "Incident Response and Management",   
+    ], // Add actual functions here
+  };
+
+  const artificialIntelligenceLabDetails = {
+    image: ArtificialIntelligenceLabImage,
+    LabName: "Lab Artificial Intelligence",
+    LabHead: "Hamonangan Kinantan P., S.T, MT",
+    LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
+    LabDesc:
+      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+    LabFunctions: [
+      "AI Ethics and Bias",
+      "Machine Learning Algorithms",
+      "Robotics and Autonomous Systems",
+      "AI Applications",
+    ], // Add actual functions here
+  };
+
+  const businessIntelligenceLabDetails = {
+    image: BusinessIntelligenceLabImage,
+    LabName: "Lab Bussiness Intelligence",
+    LabHead: "I Wayan Widi Pradnyana, M.TI",
+    LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
+    LabDesc:
+      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+    LabFunctions: [
+      "Ethical Considerations in BI",
+      "Market Intelligence",
+      "Real-time Analytics",
+      "Business Process Optimization",
+    ], // Add actual functions here
+  };
+
+  const databaseLabDetails = {
+    image: DatabaseLabImage,
+    LabName: "Lab Database",
+    LabHead: "Muhammad Adrezo, S.Kom.,M.Sc",
+    LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
+    LabDesc:
+      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+    LabFunctions: [
+      "Performance Tuning and Optimization",
+      "Data Integration and ETL",
+      "Cloud Databases",
+      "Backup and Recovery",
+    ], // Add actual functions here
+  };
+
+  const dataMiningLabDetails = {
+    image: DataMiningLabImage,
+    LabName: "Lab Data Mining dan Data Science",
+    LabHead: " Dr. Tjahjanto, S.Kom., M.M",
+    LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
+    LabDesc:
+      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+    LabFunctions: [
+      "Data Warehousing and ETL",
+      "Big Data Technologies",
+      "Data Visualization",
+      "Statistical Analysis",
+    ], // Add actual functions here
+  };
+
+  const IOTLabDetails = {
+    image: IOTLabImage,
+    LabName: "Lab Internet of Things",
+    LabHead: "Hamonangan Kinantan P., S.T, MT",
+    LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
+    LabDesc:
+      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+    LabFunctions: [
+      "Embedded Systems Development",
+      "IoT Prototyping and Development",
+      "IoT Standards and Interoperability",
+      "Ethical and Regulatory Considerations",
+    ], // Add actual functions here
+  };
+
+  return (
+    <section className="w-full px-4 py-8 flex flex-col justify-center space-y-5 md:px-[100px]">
+      <div
+        className="flex flex-row-reverse items-center justify-between space-x-1"
+        // data-aos="fade-down"
+      >
+        <p className="w-[70%] text-[24px] font-extrabold text-right md:text-[48px]">
+          Daftar Laboratorium Komputer
+          {/* <Image src={line} alt="line" width={135} height={0}/> */}
+        </p>
+        <hr className="w-[20%] border-primary-500 rounded-xl border-[3px] md:min-w-[50%]" />
+      </div>
+      <div>
+        <p
+          className="text-primary-500 text-[14px] pb-5 text-right font-semibold md:text-[24px]"
+          data-aos="fade-down"
+        >
+          Ruangan Laboratorium Komputer yang ada di dalam Fakultas Ilmu Komputer
+          UPNVJ.
+        </p>
+      </div>
+
+      <div className="w-full space-y-5 md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-center md:items-center md:gap-y-8 md:gap-x-8">
+        <div data-aos="fade-left" className="md:flex md:justify-center md:items-center">
+          <ListLaboratoriumCard {...sekretariatLabDetails} />
+        </div>
+
+        <div data-aos="fade-right"  className="md:flex md:justify-center md:items-center">
+          <ListLaboratoriumCard {...programmingLabDetails} />
+        </div>
+
+        <div data-aos="fade-left"  className="md:flex md:justify-center md:items-center">
+          <ListLaboratoriumCard {...CyberSecurityLabDetails} />
+        </div>
+
+        <div data-aos="fade-right"  className="md:flex md:justify-center md:items-center">
+          <ListLaboratoriumCard {...artificialIntelligenceLabDetails} />
+        </div>
+        
+        <div data-aos="fade-left"  className="md:flex md:justify-center md:items-center">
+          <ListLaboratoriumCard {...businessIntelligenceLabDetails} />
+        </div>
+
+        <div data-aos="fade-right"  className="md:flex md:justify-center md:items-center">
+          <ListLaboratoriumCard {...databaseLabDetails} />
+        </div>
+
+        <div data-aos="fade-left"  className="md:flex md:justify-center md:items-center">
+          <ListLaboratoriumCard {...dataMiningLabDetails} />
+        </div>
+
+        <div data-aos="fade-right"  className="md:flex md:justify-center md:items-center">
+          <ListLaboratoriumCard {...IOTLabDetails} />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default ListLaboratorium;
