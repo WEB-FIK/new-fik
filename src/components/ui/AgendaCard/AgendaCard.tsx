@@ -1,15 +1,24 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import Clock from "../../../../public/icons/Clock.svg"
-import Location from "../../../../public/icons/Location.svg"
+import ClockIcon from "../../../components/Icons/Clock";
+import LocationIcon from "../../../components/Icons/Location";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface AgendaProps {
-  image: StaticImageData;
+  image: StaticImport | StaticImageData;
   AgendaDate: string;
   AgendaMonth: string;
   AgendaTitle: string;
   AgendaHour: string;
   AgendaLocation: string;
+}
+
+function truncateText(text: string, wordLimit: number): string {
+  const words = text.split(" ");
+  if (words.length > wordLimit) {
+    return words.slice(0, wordLimit).join(" ") + "...";
+  }
+  return text;
 }
 function AgendaCard({
   image,
@@ -19,6 +28,7 @@ function AgendaCard({
   AgendaHour,
   AgendaLocation,
 }: AgendaProps) {
+  const truncatedAgendaTitle = truncateText(AgendaTitle, 10);
   return (
     <div className="w-[358px] min-h-[486px] border border-[#D4D2E3] rounded-[16px] px-5 py-7 space-y-[22px]">
       <div>
@@ -31,15 +41,19 @@ function AgendaCard({
         </div>
 
         <div className="space-y-3">
-          <p className="text-[18px] font-semibold">{AgendaTitle}</p>
+          <p className="text-[18px] font-semibold">{truncatedAgendaTitle}</p>
           <div className="flex items-center space-x-2">
-            <Image src={Clock} alt="agenda" />
-            <p className="text-[14px] text-[#6B7280] font-semibold">{AgendaHour}</p>
+            <ClockIcon />
+            <p className="text-[14px] text-[#6B7280] font-semibold">
+              {AgendaHour}
+            </p>
           </div>
 
           <div className="flex items-center space-x-2">
-            <Image src={Location} alt="agenda" />
-            <p className="text-[14px] text-[#6B7280] font-semibold pl-1">{AgendaLocation}</p>
+            <LocationIcon />
+            <p className="text-[14px] text-[#6B7280] font-semibold pl-1">
+              {AgendaLocation}
+            </p>
           </div>
         </div>
       </div>

@@ -2,11 +2,11 @@
 
 import React from "react";
 import OurValuesCard from "@/components/ui/OurValuesCard/OurValuesCard";
-import ZonaIntegritas from "../../../../public/icons/ZonaIntegritas.webp";
-import BeraniJujurHebat from "../../../../public/icons/BeraniJujurHebat.webp";
-import KerjaPrima from "../../../../public/icons/KerjaPrima.webp";
-import StopKorupsi from "../../../../public/icons/StopKorupsi.webp";
-import TolakGratifikasi from "../../../../public/icons/TolakGratifikasi.webp";
+import ZonaIntegritas from "../../../../public/images/ZonaIntegritas.webp";
+import BeraniJujurHebat from "../../../../public/images/BeraniJujurHebat.webp";
+import KerjaPrima from "../../../../public/images/KerjaPrima.webp";
+import StopKorupsi from "../../../../public/images/StopKorupsi.webp";
+import TolakGratifikasi from "../../../../public/images/TolakGratifikasi.webp";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -37,8 +37,7 @@ function OurValues() {
         </div>
         <div className="hidden md:block" data-aos="fade-down">
           <p className="text-[20px] text-white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            lacinia odio vitae vestibulum vestibulum.{" "}
+            Nilai-nilai yang diterapkan di dalam Fakultas Ilmu Komputer UPN Veteran Jakarta.{" "}
           </p>
         </div>
         <div className="space-y-5 flex flex-col justify-center items-center md:flex md:flex-row md:gap-x-5 md:space-y-0" data-aos="fade-up">

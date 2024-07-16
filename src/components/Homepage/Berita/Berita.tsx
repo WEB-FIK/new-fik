@@ -37,7 +37,7 @@ function Berita() {
           <BeritaCard
             image={FakultiInformatik}
             title="Selamat & Sukses Atas Pembukaan Program Studi Baru: S1-Sains Data"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+            desc="Pengumuman ucapan selamat dan sukses atas pembukaan program studi baru, yaitu S1-Sains Data. Program ini diharapkan akan memberikan kontribusi signifikan dalam menghasilkan lulusan yang kompeten di bidang ilmu data."
           />
         </div>
 
@@ -45,7 +45,7 @@ function Berita() {
           <BeritaCard
             image={FakultiInformatik}
             title="Dekan FIK UPNVJ Sharing Pengalaman pada Mahasiswa Riset di Pusat NAv6, USM Malaysia"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+            desc="Dekan Fakultas Ilmu Komputer (FIK) Universitas Pembangunan Nasional Veteran Jakarta (UPNVJ) berbagi pengalaman dengan mahasiswa riset di Pusat NAv6, Universiti Sains Malaysia (USM). Kegiatan ini merupakan bagian dari upaya kolaborasi dan peningkatan pengetahuan antar institusi pendidikan."
           />
         </div>
 
@@ -53,17 +53,27 @@ function Berita() {
           <BeritaCard
             image={FakultiInformatik}
             title="Pelaksanaan Ujian Akhir Semester (UAS) Genap TA. 2023/2024 FIK UPNVJ"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+            desc="Pengumuman mengenai pelaksanaan Ujian Akhir Semester (UAS) Genap Tahun Akademik 2023/2024 di Fakultas Ilmu Komputer (FIK) Universitas Pembangunan Nasional Veteran Jakarta (UPNVJ). Ujian ini merupakan evaluasi akhir dari proses pembelajaran yang telah dilalui oleh para mahasiswa selama semester genap."
           />
         </div>
 
-        <div className="w-full md:flex md:justify-center md:pt-5">
+        <div className="hidden md:block w-full md:flex md:justify-center md:pt-5">
           <Button
             text="Berita lainnya"
             path="/berita"
             bgColor="primary-500"
             variant="whiteWithPrimaryBorder"
-            width="120%"
+            width="427px"
+          />
+        </div>
+
+        <div className="block md:hidden w-full md:flex md:justify-center md:pt-5">
+          <Button
+            text="Berita lainnya"
+            path="/berita"
+            bgColor="primary-500"
+            variant="whiteWithPrimaryBorder"
+            width="100%"
           />
         </div>
       </div>
