@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import S1Informatika from "../../../../public/icons/S1Informatika.svg";
-import S1Sisfor from "../../../../public/icons/S1Sisfor.svg";
-import D3Sisfor from "../../../../public/icons/D3Sisfor.svg";
-import S1SainsData from "../../../../public/icons/S1SainsData.svg";
+import S1Informatika from "../../../components/Icons/S1Informatika";
+import S1Sisfor from "../../../components/Icons/S1Sisfor";
+import D3Sisfor from "../../../components/Icons/D3Sisfor";
+import S1SainsData from "../../../components/Icons/S1SainsData";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import AOS from "aos";
