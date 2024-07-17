@@ -11,14 +11,14 @@ import DatabaseLabImage from "../../../../public/images/DatabaseLabImage.png";
 import IOTLabImage from "../../../../public/images/IOTLabImage.png";
 import DataMiningLabImage from "../../../../public/images/DataMiningLabImage.png";
 
-// import "aos/dist/aos.css";
-// import { useEffect } from "react";
-// import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import AOS from "aos";
 
 function ListLaboratorium() {
-//   useEffect(() => {
-//     AOS.init({duration: 1000});
-//   }, []);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const sekretariatLabDetails = {
     image: SekretariatLaboratoriumImage,
     LabName: "Sekretariat Laboratorium",
@@ -143,7 +143,7 @@ function ListLaboratorium() {
     <section className="w-full px-4 py-8 flex flex-col justify-center space-y-5 md:px-[100px]">
       <div
         className="flex flex-row-reverse items-center justify-between space-x-1"
-        // data-aos="fade-down"
+        data-aos="fade-down"
       >
         <p className="w-[70%] text-[24px] font-extrabold text-right md:text-[48px]">
           Daftar Laboratorium Komputer
@@ -153,7 +153,7 @@ function ListLaboratorium() {
       </div>
       <div>
         <p
-          className="text-primary-500 text-[14px] pb-5 text-right font-semibold md:text-[24px]"
+          className="text-primary-500 text-[16px] pb-5 text-right font-semibold md:text-[24px]"
           data-aos="fade-down"
         >
           Ruangan Laboratorium Komputer yang ada di dalam Fakultas Ilmu Komputer
@@ -162,35 +162,35 @@ function ListLaboratorium() {
       </div>
 
       <div className="w-full space-y-5 md:flex md:flex-row md:flex-wrap md:space-y-0 md:justify-center md:items-center md:gap-y-8 md:gap-x-8">
-        <div data-aos="fade-left" className="md:flex md:justify-center md:items-center">
+        <div data-aos="fade-right" className="md:flex md:justify-center md:items-center">
           <ListLaboratoriumCard {...sekretariatLabDetails} />
         </div>
 
-        <div data-aos="fade-right"  className="md:flex md:justify-center md:items-center">
+        <div data-aos="fade-left"  className="md:flex md:justify-center md:items-center">
           <ListLaboratoriumCard {...programmingLabDetails} />
         </div>
 
-        <div data-aos="fade-left"  className="md:flex md:justify-center md:items-center">
+        <div data-aos="fade-right"  className="md:flex md:justify-center md:items-center">
           <ListLaboratoriumCard {...CyberSecurityLabDetails} />
         </div>
 
-        <div data-aos="fade-right"  className="md:flex md:justify-center md:items-center">
+        <div data-aos="fade-left"  className="md:flex md:justify-center md:items-center">
           <ListLaboratoriumCard {...artificialIntelligenceLabDetails} />
         </div>
         
-        <div data-aos="fade-left"  className="md:flex md:justify-center md:items-center">
+        <div data-aos="fade-right"  className="md:flex md:justify-center md:items-center">
           <ListLaboratoriumCard {...businessIntelligenceLabDetails} />
         </div>
 
-        <div data-aos="fade-right"  className="md:flex md:justify-center md:items-center">
+        <div data-aos="fade-left"  className="md:flex md:justify-center md:items-center">
           <ListLaboratoriumCard {...databaseLabDetails} />
         </div>
 
-        <div data-aos="fade-left"  className="md:flex md:justify-center md:items-center">
+        <div data-aos="fade-right"  className="md:flex md:justify-center md:items-center">
           <ListLaboratoriumCard {...dataMiningLabDetails} />
         </div>
 
-        <div data-aos="fade-right"  className="md:flex md:justify-center md:items-center">
+        <div data-aos="fade-left"  className="md:flex md:justify-center md:items-center">
           <ListLaboratoriumCard {...IOTLabDetails} />
         </div>
       </div>
