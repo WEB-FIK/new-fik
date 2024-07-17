@@ -40,7 +40,7 @@ function ListLaboratorium() {
     LabHead: "I Wayan Widi Pradnyana, M.TI",
     LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
     LabDesc:
-      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+      "Pusat praktikum dan penelitian di bidang pemrograman komputer, dilengkapi dengan komputer terbaru, jaringan internet berkecepatan tinggi, proyektor, dan papan tulis digital untuk mendukung proses belajar mengajar.",
     LabFunctions: [
       "Software and Application Development",
       "Technical Support and Troubleshooting",
@@ -55,7 +55,7 @@ function ListLaboratorium() {
     LabHead: "I Wayan Widi Pradnyana, M.TI",
     LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
     LabDesc:
-      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+      "Pusat kegiatan praktikum dan penelitian di bidang keamanan siber, dilengkapi dengan perangkat keras canggih, perangkat lunak keamanan terkini, serta jaringan simulasi serangan siber.",
     LabFunctions: [
       "Network Security",
       "Ethical Hacking",
@@ -70,7 +70,7 @@ function ListLaboratorium() {
     LabHead: "Hamonangan Kinantan P., S.T, MT",
     LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
     LabDesc:
-      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+      "Pusat praktikum dan penelitian dalam bidang kecerdasan buatan, dilengkapi dengan komputer berperforma tinggi, perangkat lunak AI terbaru, serta fasilitas pengolahan data besar (big data) dan machine learning.",
     LabFunctions: [
       "AI Ethics and Bias",
       "Machine Learning Algorithms",
@@ -85,7 +85,7 @@ function ListLaboratorium() {
     LabHead: "I Wayan Widi Pradnyana, M.TI",
     LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
     LabDesc:
-      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+      "Pusat praktikum dan penelitian dalam bidang intelijen bisnis, dilengkapi dengan komputer berperforma tinggi, perangkat lunak analitik terkini, dan platform visualisasi data untuk mendukung pengambilan keputusan bisnis.",
     LabFunctions: [
       "Ethical Considerations in BI",
       "Market Intelligence",
@@ -100,7 +100,7 @@ function ListLaboratorium() {
     LabHead: "Muhammad Adrezo, S.Kom.,M.Sc",
     LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
     LabDesc:
-      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+      "Pusat praktikum dan penelitian dalam bidang manajemen basis data, dilengkapi dengan komputer berperforma tinggi, perangkat lunak database terkini seperti SQL Server, Oracle, dan MySQL, serta fasilitas untuk pengolahan data besar.",
     LabFunctions: [
       "Performance Tuning and Optimization",
       "Data Integration and ETL",
@@ -115,7 +115,7 @@ function ListLaboratorium() {
     LabHead: " Dr. Tjahjanto, S.Kom., M.M",
     LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
     LabDesc:
-      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+      "Pusat kegiatan praktikum dan penelitian dalam bidang penambangan data dan ilmu data, dilengkapi dengan komputer berkinerja tinggi, perangkat lunak analisis data terkini, dan fasilitas big data.",
     LabFunctions: [
       "Data Warehousing and ETL",
       "Big Data Technologies",
@@ -130,7 +130,7 @@ function ListLaboratorium() {
     LabHead: "Hamonangan Kinantan P., S.T, MT",
     LabLocation: "Gedung Ki Hadjar Dewantara Lantai 3",
     LabDesc:
-      "Ruangan Sekretariat Laboratorium yang terletak di Gedung Ki Hadjar Dewantara Lantai 3, berfungsi sebagai pusat administrasi dan koordinasi kegiatan laboratorium.",
+      "Pusat kegiatan praktikum dan penelitian dalam bidang teknologi IoT, dilengkapi dengan perangkat keras canggih seperti sensor, mikrokontroler, dan modul komunikasi nirkabel, serta perangkat lunak pengembangan IoT terkini.",
     LabFunctions: [
       "Embedded Systems Development",
       "IoT Prototyping and Development",

@@ -11,7 +11,18 @@ interface ListLaboratoriumCardProps {
   LabFunctions: string[];
 }
 
+function truncateText(text: string, wordLimit: number): string {
+  const words = text.split(' ');
+  if (words.length > wordLimit) {
+    return words.slice(0, wordLimit).join(' ') + '...';
+  }
+  return text;
+}
+
+
 function ListLaboratoriumCard({ image, LabName, LabHead, LabLocation, LabDesc, LabFunctions }: ListLaboratoriumCardProps) {
+
+  const truncatedDesc = truncateText(LabDesc, 15);
   return (
     <div className="w-full min-h-[800px] flex flex-col justify-between border border-[#D4D2E3] rounded-[16px] p-5 space-y-5 md:w-[600px]">
       <div>
@@ -31,7 +42,7 @@ function ListLaboratoriumCard({ image, LabName, LabHead, LabLocation, LabDesc, L
       </div>
 
         <div>
-            <p className="font-semibold text-[16px] text-[#6B7280] text-justify">{LabDesc}</p>
+            <p className="font-semibold text-[16px] text-[#6B7280] text-justify">{truncatedDesc}</p>
         </div>
 
       <div className="w-full space-y-5">
