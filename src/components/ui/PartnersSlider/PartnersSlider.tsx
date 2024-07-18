@@ -21,7 +21,7 @@ export const PartnersSlider = ({
 
   useEffect(() => {
     addAnimation();
-  }, []);
+  });
 
   const [start, setStart] = useState(false);
 
