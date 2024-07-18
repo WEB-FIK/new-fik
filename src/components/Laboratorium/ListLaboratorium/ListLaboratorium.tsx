@@ -147,7 +147,6 @@ function ListLaboratorium() {
       >
         <p className="w-[70%] text-[24px] font-extrabold text-right md:text-[48px]">
           Daftar Laboratorium Komputer
-          {/* <Image src={line} alt="line" width={135} height={0}/> */}
         </p>
         <hr className="w-[20%] border-primary-500 rounded-xl border-[3px] md:min-w-[50%]" />
       </div>
