@@ -31,7 +31,7 @@ function ListLaboratorium() {
       "Coordination of Laboratory Activities",
       "Service and Technical Support",
       "Development and Research",
-    ], // Add actual functions here
+    ]
   };
 
   const programmingLabDetails = {
@@ -46,7 +46,7 @@ function ListLaboratorium() {
       "Technical Support and Troubleshooting",
       "Operating Systems",
       "Development and Research",
-    ], // Add actual functions here
+    ]
   };
 
   const CyberSecurityLabDetails = {
@@ -61,7 +61,7 @@ function ListLaboratorium() {
       "Ethical Hacking",
       "Cyber Defense Strategies",
       "Incident Response and Management",   
-    ], // Add actual functions here
+    ]
   };
 
   const artificialIntelligenceLabDetails = {
@@ -76,7 +76,7 @@ function ListLaboratorium() {
       "Machine Learning Algorithms",
       "Robotics and Autonomous Systems",
       "AI Applications",
-    ], // Add actual functions here
+    ]
   };
 
   const businessIntelligenceLabDetails = {
@@ -91,7 +91,7 @@ function ListLaboratorium() {
       "Market Intelligence",
       "Real-time Analytics",
       "Business Process Optimization",
-    ], // Add actual functions here
+    ]
   };
 
   const databaseLabDetails = {
@@ -106,7 +106,7 @@ function ListLaboratorium() {
       "Data Integration and ETL",
       "Cloud Databases",
       "Backup and Recovery",
-    ], // Add actual functions here
+    ]
   };
 
   const dataMiningLabDetails = {
@@ -121,7 +121,7 @@ function ListLaboratorium() {
       "Big Data Technologies",
       "Data Visualization",
       "Statistical Analysis",
-    ], // Add actual functions here
+    ]
   };
 
   const IOTLabDetails = {
@@ -136,7 +136,7 @@ function ListLaboratorium() {
       "IoT Prototyping and Development",
       "IoT Standards and Interoperability",
       "Ethical and Regulatory Considerations",
-    ], // Add actual functions here
+    ]
   };
 
   return (

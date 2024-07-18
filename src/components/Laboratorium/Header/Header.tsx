@@ -6,7 +6,6 @@ import LaboratoriumHeaderDesktop from "../../../../public/images/LaboratoriumHea
 function LaboratoriumPageHeader() {
   return (
     <div>
-      {/* Mobile */}
       <div className="relative w-full h-[279px] block md:hidden">
         <Image
           src={LaboratoriumHeaderMobile}
@@ -23,8 +22,6 @@ function LaboratoriumPageHeader() {
           </div>
         </div>
       </div>
-
-      {/* Desktop */}
       <div className="relative w-full h-[550px] hidden md:block">
         <Image
           src={LaboratoriumHeaderDesktop}
