@@ -18,6 +18,7 @@ export interface manajemenDetail {
   position: string;
   profileRoute?: string;
   lhkpnRoute?: string;
+  linkLHKPN?: string;
 }
 
 export const dekanatDetails: manajemenDetail[] = [
@@ -26,7 +27,8 @@ export const dekanatDetails: manajemenDetail[] = [
     name: "Prof. Dr. Ir. Supriyanto, M.Sc., IPM.", 
     position: "Dekan", 
     profileRoute: "/manajemen/profile/supriyanto", 
-    lhkpnRoute: "/manajemen/LHKPN/supriyanto" 
+    lhkpnRoute: "/manajemen/LHKPN/supriyanto",
+    linkLHKPN: "https://drive.google.com/file/d/13JqFUD3q3T_jDgfYHvKNbEIsbeFwB3u1/view"
   },
   { 
     image: WadekAkademik,
