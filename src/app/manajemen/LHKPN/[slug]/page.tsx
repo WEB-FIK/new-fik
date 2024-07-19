@@ -1,39 +1,22 @@
-"use client";
-
 import { useRouter } from 'next/router';
-import React from 'react';
-import { dekanatDetails, manajemenDetail } from '@/data/manajemenDetails';
-import Link from 'next/link';
+import { useEffect } from 'react';
+import { dekanatDetails } from '@/data/manajemenDetails'
 
-const LHKPNPage: React.FC = () => {
+const LHKPNPage = ({ params }: { params: { lhkpn: string } }) => {
   const router = useRouter();
-  const { slug } = router.query;
+  const { lhkpn } = params;
 
-  if (!slug) {
-    return <div>Loading...</div>;
-  }
+  useEffect(() => {
+    const person = dekanatDetails.find(
+      (person) => person.lhkpnRoute === `/manajemen/LHKPN/${lhkpn}`
+    );
 
-  // Mencari data berdasarkan slug
-  const dekanDetail: manajemenDetail | undefined = dekanatDetails.find((dekan) => {
-    const routeSlug = dekan.lhkpnRoute?.split('/').pop();
-    return routeSlug === slug;
-  });
+    if (person && person.linkLHKPN) {
+      router.push(person.linkLHKPN);
+    }
+  }, [lhkpn, router]);
 
-  if (!dekanDetail) {
-    return <div>Detail tidak ditemukan</div>;
-  }
-
-  return (
-    <div>
-      <h1>{dekanDetail.name}</h1>
-      <p>Position: {dekanDetail.position}</p>
-      {dekanDetail.linkLHKPN && (
-        <Link href={dekanDetail.linkLHKPN} target="_blank" rel="noopener noreferrer">
-          Lihat LHKPN
-        </Link>
-      )}
-    </div>
-  );
+  return <div>Redirecting...</div>;
 };
 
 export default LHKPNPage;
