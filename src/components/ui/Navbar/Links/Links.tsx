@@ -1,14 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import NavLinks from "./NavLinks/NavLinks";
-import styles from "./links.module.css";
-import Image from "next/image";
 
 const Links = () => {
-  const [open, setOpen] = useState(false);
-
   const links = [
     {
       name: "Beranda",
@@ -17,29 +12,54 @@ const Links = () => {
     {
       name: "Tentang",
       path: "/tentang",
+      subLinks: [
+        { name: "Tentang FIK", path: "/tentang-fik" },
+        { name: "Manajemen", path: "/manajemen" },
+        { name: "Staf Pengajar", path: "/staf-pengajar" },
+      ],
     },
     {
-      name: "Manajemen",
-      path: "/manajemen",
+      name: "Akademik",
+      path: "/akademik",
+      subLinks: [
+        { name: "Sarjana Informatika", path: "/akademik/sarjana-informatika" },
+        { name: "Sarjana Sains Data", path: "/akademik/sarjana-sains-data" },
+        { name: "Sarjana Sistem Informasi", path: "/akademik/sarjana-sistem-informasi" },
+        { name: "Diploma Sistem Informasi", path: "/akademik/diploma-sistem-informasi" },
+      ],
     },
     {
-      name: "Staf Pengajar",
-      path: "/staf-pengajar",
+      name: "Kemahasiswaan",
+      path: "/kemahasiswaan",
+      subLinks: [
+        { name: "Kehidupan Kampus", path: "/kemahasiswaan/kehidupan-kampus" },
+        { name: "Prestasi Mahasiswa", path: "/kemahasiswaan/prestasi-mahasiswa" },
+        { name: "Layanan Mahasiswa", path: "/kemahasiswaan/layanan-mahasiswa" },
+        { name: "Beasiswa", path: "/kemahasiswaan/beasiswa" },
+      ],
     },
     {
-        name: "Program Studi",
-        path: "/program-studi",
-      },
-      {
-        name: "Laboratorium",
-        path: "/laboratorium",
-      },
+      name: "Penelitian",
+      path: "/penelitian",
+      subLinks: [
+        { name: "Laboratorium", path: "/laboratorium" },
+      ]
+    },
+    {
+      name: "Berita",
+      path: "/berita",
+    },
+    {
+      name: "Agenda",
+      path: "/agenda",
+    },
   ];
+  
   return (
-    <div className="space-x-6">
-        {links.map((link) => {
-          return <NavLinks item={link} key={link.name} />
-        })}  
+    <div className="space-x-16">
+        {links.map((link) => (
+          <NavLinks item={link} key={link.name} />
+        ))}  
     </div>
   );
 };

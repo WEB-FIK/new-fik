@@ -5,7 +5,7 @@ import upnvj from "../../../../public/icons/UPNVJ.png";
 import Image from "next/image";
 export default function Navbar() {
   return (
-    <div className="justify-between w-full h-[180px] flex items-center px-[100px]">
+    <div className="justify-between w-full h-[160px] flex items-center px-[100px]">
       <div className="flex items-center justify-between">
         <Link href="/">
           <Image src={upnvj} alt="logo" />
