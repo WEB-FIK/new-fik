@@ -1,34 +1,20 @@
 "use client";
 
-import React, { useState } from "react";
-import Link from "next/link";
-import NavLinks from "./NavLinks/NavLinks";
-
-interface SubLink {
-  name: string;
-  path: string;
-}
-
-interface LinkItem {
-  name: string;
-  path: string;
-  subLinks?: SubLink[];
-}
+import React from "react";
+import useMenuState from "../../../../hooks/useMenuState";
+import MainMenu from "./MainMenu";
+import SubMenu from "./SubMenu";
+import { LinkItem } from "./types";
 
 interface LinksProps {
   closeMenu: () => void;
 }
 
-const Links = ({ closeMenu }: { closeMenu: () => void }) => {
-  const [currentMenu, setCurrentMenu] = useState("main");
-  const [subLinks, setSubLinks] = useState<SubLink[]>([]);
-  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+const Links: React.FC<LinksProps> = ({ closeMenu }) => {
+  const { currentMenu, subLinks, isSubMenuOpen, openSubMenu, closeSubMenu } = useMenuState();
 
   const links: LinkItem[] = [
-    {
-      name: "Beranda",
-      path: "/",
-    },
+    { name: "Beranda", path: "/" },
     {
       name: "Tentang",
       path: "/tentang",
@@ -60,58 +46,29 @@ const Links = ({ closeMenu }: { closeMenu: () => void }) => {
     },
     {
       name: "Penelitian",
-      path: "/laboratorium",
+      path: "/penelitian",
       subLinks: [
         { name: "Laboratorium", path: "/laboratorium" },
       ]
     },
-    {
-      name: "Berita",
-      path: "/berita",
-    },
-    {
-      name: "Agenda",
-      path: "/agenda",
-    },
+    { name: "Berita", path: "/berita" },
+    { name: "Agenda", path: "/agenda" },
   ];
 
   const handleLinkClick = (link: LinkItem) => {
     if (link.subLinks) {
-      setSubLinks(link.subLinks);
-      setCurrentMenu(link.name);
-      setIsSubMenuOpen(true);
+      openSubMenu(link.subLinks, link.name);
     } else {
       closeMenu();
     }
   };
 
-  const handleBackClick = () => {
-    setIsSubMenuOpen(false);
-    setTimeout(() => {
-      setCurrentMenu("main");
-      setSubLinks([]);
-    }, 500);
-  };
-
   return (
     <div className="flex flex-col space-y-8 space-x-0 md:flex-row md:space-x-16 md:space-y-0">
       {currentMenu === "main" ? (
-        links.map((link) => (
-          <div key={link.name} onClick={() => handleLinkClick(link)}>
-            <NavLinks item={link} />
-          </div>
-        ))
+        <MainMenu links={links} onLinkClick={handleLinkClick} />
       ) : (
-        <div className={`flex flex-col transition-transform duration-500 ease-in-out transform ${isSubMenuOpen ? '-translate-x-0' : 'translate-x-full md:translate-x-0'}`}>
-          <button onClick={handleBackClick} className="flex items-center font-bold text-left text-[48px]">
-            {"<"}
-          </button>
-          {subLinks.map((subLink) => (
-            <Link key={subLink.name} href={subLink.path} className="text-[18px] font-bold hover:text-primary-500 transition-all transform ease-in-out py-2" onClick={closeMenu}>
-              {subLink.name}
-            </Link>
-          ))}
-        </div>
+        <SubMenu subLinks={subLinks} onBackClick={closeSubMenu} closeMenu={closeMenu} />
       )}
     </div>
   );
