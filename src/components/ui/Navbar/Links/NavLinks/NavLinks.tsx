@@ -29,7 +29,7 @@ const NavLinks = ({ item }: { item: Item }) => {
     setIsLeaving(true);
     timeoutRef.current = setTimeout(() => {
       setIsOpen(false);
-    }, 300); // Adjust the delay as needed
+    }, 300); 
   };
 
   return (
@@ -46,17 +46,17 @@ const NavLinks = ({ item }: { item: Item }) => {
       </Link>
       {item.subLinks && isOpen && (
         <div
-          className={`absolute left-0 mt-2 min-w-56 p-2 rounded-md bg-white border border-gray-300 shadow-lg z-10 ${
+          className={`hidden md:block absolute left-0 mt-2 min-w-56 p-2 rounded-md bg-white border border-gray-300 shadow-lg z-10 ${
             isLeaving ? 'transition-opacity opacity-0' : 'transition-opacity opacity-100'
           }`}
-          onMouseEnter={handleMouseEnter} // Ensure menu stays open when hovering over sublinks
+          onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           {item.subLinks.map((subLink) => (
             <Link
               key={subLink.name}
               href={subLink.path}
-              className="block p-4  text-[18px] rounded-md font-semibold hover:bg-primary-500 hover:text-white"
+              className="block p-4 text-[18px] rounded-md font-semibold hover:bg-primary-500 hover:text-white"
               onClick={() => setIsOpen(false)}
             >
               {subLink.name}

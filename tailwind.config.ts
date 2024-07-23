@@ -13,6 +13,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      transitionProperty: {
+        'height': 'height',
+        'spacing': 'margin, padding',
+        'transform': 'transform',
+      },
+      transformOrigin: {
+        '0': '0%',
+      },
+      transitionDuration: {
+        '0': '0ms',
+        '500': '500ms',
+        '2000': '2000ms',
+      },
       animation: {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",

@@ -1,10 +1,30 @@
 "use client";
 
+import React, { useState } from "react";
 import Link from "next/link";
 import NavLinks from "./NavLinks/NavLinks";
 
-const Links = () => {
-  const links = [
+interface SubLink {
+  name: string;
+  path: string;
+}
+
+interface LinkItem {
+  name: string;
+  path: string;
+  subLinks?: SubLink[];
+}
+
+interface LinksProps {
+  closeMenu: () => void;
+}
+
+const Links = ({ closeMenu }: { closeMenu: () => void }) => {
+  const [currentMenu, setCurrentMenu] = useState("main");
+  const [subLinks, setSubLinks] = useState<SubLink[]>([]);
+  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+
+  const links: LinkItem[] = [
     {
       name: "Beranda",
       path: "/",
@@ -40,7 +60,7 @@ const Links = () => {
     },
     {
       name: "Penelitian",
-      path: "/penelitian",
+      path: "/laboratorium",
       subLinks: [
         { name: "Laboratorium", path: "/laboratorium" },
       ]
@@ -54,12 +74,45 @@ const Links = () => {
       path: "/agenda",
     },
   ];
-  
+
+  const handleLinkClick = (link: LinkItem) => {
+    if (link.subLinks) {
+      setSubLinks(link.subLinks);
+      setCurrentMenu(link.name);
+      setIsSubMenuOpen(true);
+    } else {
+      closeMenu();
+    }
+  };
+
+  const handleBackClick = () => {
+    setIsSubMenuOpen(false);
+    setTimeout(() => {
+      setCurrentMenu("main");
+      setSubLinks([]);
+    }, 500);
+  };
+
   return (
-    <div className="space-x-16">
-        {links.map((link) => (
-          <NavLinks item={link} key={link.name} />
-        ))}  
+    <div className="flex flex-col space-y-8 space-x-0 md:flex-row md:space-x-16 md:space-y-0">
+      {currentMenu === "main" ? (
+        links.map((link) => (
+          <div key={link.name} onClick={() => handleLinkClick(link)}>
+            <NavLinks item={link} />
+          </div>
+        ))
+      ) : (
+        <div className={`flex flex-col transition-transform duration-500 ease-in-out transform ${isSubMenuOpen ? '-translate-x-0' : 'translate-x-full md:translate-x-0'}`}>
+          <button onClick={handleBackClick} className="flex items-center font-bold text-left text-[48px]">
+            {"<"}
+          </button>
+          {subLinks.map((subLink) => (
+            <Link key={subLink.name} href={subLink.path} className="text-[18px] font-bold hover:text-primary-500 transition-all transform ease-in-out py-2" onClick={closeMenu}>
+              {subLink.name}
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
