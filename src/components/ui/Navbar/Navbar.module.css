@@ -1,0 +1,94 @@
+/* Styles for ToggleButton */
+.toggleButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 2rem; /* 8 * 0.25rem */
+    height: 2rem; /* 8 * 0.25rem */
+    margin-right: 0.5rem; /* 2 * 0.25rem */
+  }
+  
+  .toggleButtonBar {
+    display: block;
+    width: 1.5rem; /* 6 * 0.25rem */
+    height: 0.25rem; /* 4 * 0.0625rem */
+    background-color: black;
+    transition: transform 0.3s;
+  }
+  
+  .toggleButtonBarTop {
+    margin-top: 0.25rem; /* 1 * 0.25rem */
+  }
+  
+  .toggleButtonBarOpenTop {
+    transform: rotate(45deg) translateY(0.125rem); /* 2px */
+  }
+  
+  .toggleButtonBarOpenBottom {
+    transform: rotate(-45deg) translateY(-0.125rem); /* -2px */
+  }
+  
+  /* Styles for Logo */
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* 0.25rem for mobile, 1rem for desktop */
+  }
+  
+  .logoLink {
+    border-right: 2px solid #EB5528; /* Primary color */
+    padding-right: 2.25rem; /* 36px */
+  }
+  
+  .logoText {
+    padding-left: 1.5rem; /* 6 * 0.25rem */
+    font-size: 1rem; /* 14px */
+    font-weight: bold;
+    color: #EB5528; /* Primary color */
+  }
+  
+  .logoTextDesktop {
+    font-size: 1.25rem; /* 20px */
+  }
+  
+  /* Styles for Navbar */
+  .navbarContainer {
+    position: relative;
+    padding: 1rem; /* 4 * 0.25rem */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 5rem; /* 80px */
+  }
+  
+  .navbarContent {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.75rem; /* 3 * 0.25rem */
+  }
+  
+  .navbarLinksMobile {
+    position: absolute;
+    top: 100%;
+    left: -0.9375rem; /* -15px */
+    width: 100%;
+    background-color: white;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 0.375rem 0.375rem; /* rounded-b-md */
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .navbarLinksOpen {
+    min-height: 28.125rem; /* 450px */
+    padding: 1.5rem 2rem; /* px-8 py-6 */
+  }
+  
+  .navbarLinksClosed {
+    max-height: 0;
+    overflow: hidden;
+  }
+  

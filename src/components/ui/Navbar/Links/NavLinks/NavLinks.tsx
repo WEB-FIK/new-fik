@@ -1,16 +1,10 @@
-"use client";
-
 import React, { useState, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import SubLinks from "./SubLinks";
+import { Item } from "../types";
 
-interface Item {
-  name: string;
-  path: string;
-  subLinks?: { name: string; path: string }[];
-}
-
-const NavLinks = ({ item }: { item: Item }) => {
+const NavLinks: React.FC<{ item: Item }> = ({ item }) => {
   const pathName = usePathname();
   const isActive = pathName === item.path;
   const [isOpen, setIsOpen] = useState(false);
@@ -32,37 +26,41 @@ const NavLinks = ({ item }: { item: Item }) => {
     }, 300); 
   };
 
+  const handleClick = () => {
+    setIsOpen((prev) => !prev);
+  };
+
   return (
     <div
       className="relative inline-block space-y-4"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <Link
-        href={item.path}
-        className={`text-[18px] font-bold hover:text-primary-500 transition-all transform ease-in-out ${isActive && "text-primary-500"}`}
-      >
-        {item.name}
-      </Link>
-      {item.subLinks && isOpen && (
-        <div
-          className={`hidden md:block absolute left-0 mt-2 min-w-56 p-2 rounded-md bg-white border border-gray-300 shadow-lg z-10 ${
-            isLeaving ? 'transition-opacity opacity-0' : 'transition-opacity opacity-100'
-          }`}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+      <div className="flex items-center">
+        <Link
+          href={item.path}
+          className={`text-lg font-bold transition-colors duration-300 ${isActive ? 'text-primary-500' : 'text-black'} hover:text-primary-500`}
         >
-          {item.subLinks.map((subLink) => (
-            <Link
-              key={subLink.name}
-              href={subLink.path}
-              className="block p-4 text-[18px] rounded-md font-semibold hover:bg-primary-500 hover:text-white"
-              onClick={() => setIsOpen(false)}
-            >
-              {subLink.name}
-            </Link>
-          ))}
-        </div>
+          {item.name}
+        </Link>
+        {item.subLinks && (
+          <button
+            className="ml-2 hidden md:block text-lg"
+            onClick={handleClick}
+            aria-label={`Toggle ${item.name} sub-menu`}
+          >
+            {/* You can use an icon here, e.g., a chevron */}
+            {isOpen ? "▲" : "▼"}
+          </button>
+        )}
+      </div>
+      {item.subLinks && isOpen && (
+        <SubLinks 
+          subLinks={item.subLinks} 
+          onMouseEnter={handleMouseEnter} 
+          onMouseLeave={handleMouseLeave} 
+          isLeaving={isLeaving} 
+        />
       )}
     </div>
   );
