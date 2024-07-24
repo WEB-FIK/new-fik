@@ -1,8 +1,8 @@
 import React from "react";
-import LogoSection from "@/components/Footer/LogoSection";
-import ContactInfo from "@/components/Footer/ContactInfo";
-import AcademicLinks from "@/components/Footer/AcademicLinks";
-import AboutLinks from "@/components/Footer/AboutLinks";
+import LogoSection from "@/components/Footer/LogoSection/LogoSection";
+import ContactInfo from "@/components/Footer/ContactInfo/ContactInfo";
+import AcademicLinks from "@/components/Footer/AcademicLinks/AcademicLinks";
+import AboutLinks from "@/components/Footer/AboutLinks/AboutLinks";
 
 function Footer() {
   return (
