@@ -18,6 +18,7 @@ export interface manajemenDetail {
   position: string;
   profileRoute?: string;
   lhkpnRoute?: string;
+  linkLHKPN?: string;
 }
 
 export const dekanatDetails: manajemenDetail[] = [
@@ -26,28 +27,32 @@ export const dekanatDetails: manajemenDetail[] = [
     name: "Prof. Dr. Ir. Supriyanto, M.Sc., IPM.", 
     position: "Dekan", 
     profileRoute: "/manajemen/profile/supriyanto", 
-    lhkpnRoute: "/manajemen/LHKPN/supriyanto" 
+    lhkpnRoute: "/manajemen/LHKPN/supriyanto",
+    linkLHKPN: "https://drive.google.com/file/d/13JqFUD3q3T_jDgfYHvKNbEIsbeFwB3u1/view"
   },
   { 
     image: WadekAkademik,
     name: "Erly Krisnanik, S.Kom.,MM", 
     position: "Wakil Dekan Bidang Akademik", 
     profileRoute: "/manajemen/profile/erly-krisnanik", 
-    lhkpnRoute: "/manajemen/LHKPN/erly-krisnanik" 
+    lhkpnRoute: "/manajemen/LHKPN/erly-krisnanik",
+    linkLHKPN: "https://drive.google.com/file/d/1suxmjkfpBZe8Of6jWl3T8nk8_nDS9Dvm/view?usp=sharing" 
   },
   { 
     image: WadekKeuangan,
     name: "Dr. Bambang Saras Yulistiawan, S.T.", 
     position: "Wakil Dekan Bidang Umum dan Keuangan", 
     profileRoute: "/manajemen/profile/bambang-saras-yulistiawan", 
-    lhkpnRoute: "/manajemen/LHKPN/bambang-saras-yulistiawan" 
+    lhkpnRoute: "/manajemen/LHKPN/bambang-saras-yulistiawan",
+    linkLHKPN: "https://drive.google.com/file/d/1lgLB81KOtmndAbfhQrQKS74ECjccjCeO/view?usp=sharing" 
   },
   { 
     image: WadekKemahasiswaan,
     name: "Ati Zaidiah, S.Kom, MTI.", 
     position: "Wakil Dekan Bidang Kemahasiswaan dan Kerja Sama", 
     profileRoute: "/manajemen/profile/ati-zaidiah", 
-    lhkpnRoute: "/manajemen/LHKPN/ati-zaidiah" 
+    lhkpnRoute: "/manajemen/LHKPN/ati-zaidiah",
+    linkLHKPN: "https://drive.google.com/file/d/13YzYHIL2H21xzhlOm4J1rznfXIWWuH_f/view?usp=sharing" 
   }
 ];
 
