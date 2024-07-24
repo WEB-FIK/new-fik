@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import upnvj from "../../../public/icons/UPNVJ.png";
+import upnvj from "../../../../public/icons/UPNVJ.png";
 
 const LogoSection = () => (
   <div className="flex items-center space-x-4 md:pt-9">
