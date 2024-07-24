@@ -68,7 +68,9 @@ const Links: React.FC<LinksProps> = ({ closeMenu }) => {
       {currentMenu === "main" ? (
         <MainMenu links={links} onLinkClick={handleLinkClick} />
       ) : (
-        <SubMenu subLinks={subLinks} onBackClick={closeSubMenu} closeMenu={closeMenu} />
+        <div className="md:hidden">
+          <SubMenu subLinks={subLinks} onBackClick={closeSubMenu} closeMenu={closeMenu} />
+        </div>
       )}
     </div>
   );

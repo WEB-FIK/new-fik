@@ -15,7 +15,12 @@ const SubMenu: React.FC<SubMenuProps> = ({ subLinks, onBackClick, closeMenu }) =
         {"<"}
       </button>
       {subLinks.map((subLink) => (
-        <Link key={subLink.name} href={subLink.path} className="text-[18px] font-bold hover:text-primary-500 transition-all transform ease-in-out py-2" onClick={closeMenu}>
+        <Link 
+          key={subLink.name} 
+          href={subLink.path} 
+          className="text-[18px] font-bold hover:text-primary-500 transition-all transform ease-in-out py-2" 
+          onClick={closeMenu}
+        >
           {subLink.name}
         </Link>
       ))}

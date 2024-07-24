@@ -23,10 +23,11 @@ const NavLinks: React.FC<{ item: Item }> = ({ item }) => {
     setIsLeaving(true);
     timeoutRef.current = setTimeout(() => {
       setIsOpen(false);
-    }, 300); 
+    }, 300);
   };
 
-  const handleClick = () => {
+  const handleClick = (event: React.MouseEvent) => {
+    event.preventDefault();  // Prevent default link click behavior
     setIsOpen((prev) => !prev);
   };
 
@@ -49,7 +50,6 @@ const NavLinks: React.FC<{ item: Item }> = ({ item }) => {
             onClick={handleClick}
             aria-label={`Toggle ${item.name} sub-menu`}
           >
-            {/* You can use an icon here, e.g., a chevron */}
             {isOpen ? "▲" : "▼"}
           </button>
         )}
