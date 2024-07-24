@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/Navbar/Navbar";
+import Footer from "@/components/ui/Footer/Footer";
 const plusJakartaSans = Plus_Jakarta_Sans({
   weight: "400",
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={`${plusJakartaSans.className} bg-white overflow-x-hidden`}>
         {/* <Navbar /> */}
         {children}
+        <Footer/>
       </body>
     </html>
   );

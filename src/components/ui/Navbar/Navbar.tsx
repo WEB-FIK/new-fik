@@ -14,7 +14,7 @@ export default function Navbar() {
           <p>FAKULTAS ILMU KOMPUTER</p>
           <p>VETERAN JAKARTA</p>
         </div>
-          </div>
+      </div>
       <div>
         <Links />
       </div>
