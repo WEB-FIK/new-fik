@@ -84,6 +84,8 @@ const config: Config = {
         "warning-700": "#958932",
         "warning-800": "#645C21",
         "warning-900": "#322E11",
+
+        "footer": "#CCCCCC",
       },
     },
   },
