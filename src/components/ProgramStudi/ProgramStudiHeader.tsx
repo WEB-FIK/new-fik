@@ -13,11 +13,11 @@ const HeaderContent = ({ isMobile }: { isMobile: boolean }) => (
       alt="Laboratorium Header"
       className="w-full h-full object-cover"
     />
-    <div className="absolute inset-0 flex flex-col justify-center items-end text-white text-right px-6 lg:px-12 xl:px-16">
+    <div className="absolute inset-0 flex flex-col justify-center items-end text-white text-left px-6 lg:px-12 xl:px-16">
       <div className={`w-full md:w-auto md:flex md:flex-col md:items-end`}>
-        <div className={`w-[90%] font-bold text-[${isMobile ? '29px' : '60px'}] md:text-[60px] space-y-2 text-left`} data-aos="fade-right">
-          <p>Program Studi Sarjana Sistem Informasi FIK</p>
-          <p className="font-bold text-[18px] text-left" data-aos="fade-up">
+        <div className={`md:w-[70%] font-bold text-[${isMobile ? '29px' : '60px'}] md:text-[60px] space-y-2 text-left`} data-aos="fade-right">
+          <p className='text-[42px]'>Program Studi Sarjana Sistem Informasi FIK</p>
+          <p className="font-bold text-[18px] md:text-[24px]" data-aos="fade-up">
             UPN Veteran Jakarta
           </p>
         </div>

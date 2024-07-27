@@ -6,7 +6,7 @@ import CapaianPembelajaranLulusan from '@/components/ProgramStudi/SarjanaSistemI
 import LamaStudi from '@/components/ProgramStudi/LamaStudi/LamaStudi'
 import KurikulumSarjanaSistemInformasi from '@/components/ProgramStudi/SarjanaSistemInformasi/KurikulumSarjanaSistemInformasi/KurikulumSarjanaSistemInformasi'
 import Peminatan from '@/components/ProgramStudi/SarjanaSistemInformasi/Peminatan/Peminatan'
-import FAQ from '@/components/ProgramStudi/SarjanaSistemInformasi/FAQs/FAQ'
+import FAQ from '@/components/ProgramStudi/FAQs/FAQ'
 function page() {
   return (
     <div>
