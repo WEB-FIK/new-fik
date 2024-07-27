@@ -3,7 +3,7 @@ import SectionHeader from "@/components/ui/SectionHeader/SectionHeader";
 import { AccordionDemo } from "@/components/ui/Accordion/Accordion";
 function LamaStudi() {
   return (
-    <section className="bg-slate-300 min-h-[200px] w-full px-4 py-8 flex flex-col justify-center space-y-5 md:px-[100px] md:min-h-[400px]">
+    <section className="bg-[#EDEDED] min-h-[200px] w-full px-4 py-8 flex flex-col justify-center space-y-5 md:px-[100px] md:min-h-[400px]">
       <SectionHeader
         title="Lama Studi"
         subtitle=" Mengetahui lebih lanjut lama masa studi program sarjana sistem informasi  Fakultas komputer UPNVJ."
