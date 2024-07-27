@@ -6,6 +6,7 @@ import CapaianPembelajaranLulusan from '@/components/ProgramStudi/SarjanaSistemI
 import LamaStudi from '@/components/ProgramStudi/LamaStudi/LamaStudi'
 import KurikulumSarjanaSistemInformasi from '@/components/ProgramStudi/SarjanaSistemInformasi/KurikulumSarjanaSistemInformasi/KurikulumSarjanaSistemInformasi'
 import Peminatan from '@/components/ProgramStudi/SarjanaSistemInformasi/Peminatan/Peminatan'
+import FAQ from '@/components/ProgramStudi/SarjanaSistemInformasi/FAQs/FAQ'
 function page() {
   return (
     <div>
@@ -16,6 +17,7 @@ function page() {
         <LamaStudi/>
         <KurikulumSarjanaSistemInformasi/>
         <Peminatan/>
+        <FAQ/>
     </div>
   )
 }
