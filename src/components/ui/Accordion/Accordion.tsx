@@ -26,23 +26,23 @@ import {
     },
   ];
   
-  export function AccordionDemo() {
+  export function AccordionProgramStudi() {
     return (
       <Accordion
         type="single"
         collapsible
-        className="w-full min-h-[200px] text-primary-500"
+        className="w-full min-h-[200px] text-primary-500 md:space-y-10"
       >
         {accordionDatas.map((data) => (
           <AccordionItem
             key={data.id}
             value={`item-${data.id}`}
-            className="border border-primary-500 mb-2 p-2 rounded-[16px]"
+            className="border border-primary-500 mb-2 p-2 rounded-[16px] md:p-12"
           >
-            <AccordionTrigger className="text-left font-bold text-[14px]">
+            <AccordionTrigger className="text-left font-bold text-[14px] md:text-[24px]">
               {data.title}
             </AccordionTrigger>
-            <AccordionContent>
+            <AccordionContent className="md:text-[20px]">
               {data.content}
             </AccordionContent>
           </AccordionItem>
