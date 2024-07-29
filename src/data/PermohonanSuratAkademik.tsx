@@ -60,3 +60,29 @@ export const dataPermohonanSuratKerjaPraktek: PermohonanSuratAkademikProps[] = [
         path: "/",
     },
 ]
+
+export const dataPendaftaranProposal: PermohonanSuratAkademikProps[] = [
+    {
+        title: "Form Pendaftaran Sidang Proposal",
+        path: "/",
+    },
+    {
+        title: "Form Pendaftaran Pembimbing Proposal",
+        path: "/",
+    },
+]
+
+export const dataAdministrasiSkripsi: PermohonanSuratAkademikProps[] = [
+    {
+        title: "Form Pendaftaran Sidang Skripsi",
+        path: "/",
+    },
+    {
+        title: "Form Pendaftaran Pembimbing Tugas Akhir/Skripsi",
+        path: "/",
+    },
+    {
+        title: "Form Pengumpulan Laporan Skripsi/Tugas Akhir",
+        path: "/",
+    },
+]

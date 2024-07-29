@@ -11,7 +11,7 @@ const PermohonanSuratKerjaPraktek: React.FC = () => {
         subtitle="Pengajuan berbagai surat keterangan akademik untuk keperluan mahasiswa."
         textAlign="right"
       />
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center md:pt-8">
       <LayananMahasiswaCard data={dataPermohonanSuratKerjaPraktek} />
       </div>
     </section>

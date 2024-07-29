@@ -8,15 +8,16 @@ interface LayananMahasiswaCardProps {
 
 const LayananMahasiswaCard: React.FC<LayananMahasiswaCardProps> = ({ data }) => {
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center items-center md:justify-between">
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-x-8">
       {data.map((item, index) => (
-        <div 
+        <Link
+          href={item.path} 
           key={index} 
-          className='w-[360px] h-[140px] md:w-[375px] md:h-[180px] rounded-[12px] flex flex-col justify-between p-6 bg-primary-500 text-white mb-4 transition duration-300 ease-in-out md:bg-white md:text-black md:border md:hover:bg-primary-500 md:hover:text-white'
+          className='group shadow-lg w-full h-[140px] md:h-[160px] rounded-[12px] flex flex-col justify-between p-6 bg-primary-500 text-[18px] font-semibold text-white mb-4 transition duration-300 ease-in-out md:bg-white md:text-black md:border md:hover:bg-primary-500 md:hover:text-white'
         >
-          <p className='text-[18px] font-semibold md:text-black md:hover:text-white'>{item.title}</p>
-          <Link href={item.path} className='text-[14px] underline md:text-primary-500 md:hover:text-white'>Lihat Video Tutorial</Link>
-        </div>
+          {item.title}
+          <p className='text-[14px] underline md:text-primary-500 md:group-hover:text-white'>Akses Form</p>
+        </Link>
       ))}
     </div>
   );

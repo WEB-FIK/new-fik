@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import LayananMahasiswaHeaderDesktop from "../../../../public/images/LayananMahasiswaHeaderDesktop.png"
-import LayananMahasiswaHeaderMobile from "../../../../public/images/LayananMahasiswaHeaderMobile.jpg"
+import LayananMahasiswaHeaderDesktop from "../../../../public/images/LayananMahasiswaHeaderDesktop.png";
+import LayananMahasiswaHeaderMobile from "../../../../public/images/LayananMahasiswaHeaderMobile.jpg";
 
 function Header() {
   return (
@@ -35,7 +35,7 @@ function Header() {
             <div className="w-full md:w-auto md:flex md:flex-col md:items-end">
               <div className="font-bold text-[29px] md:text-[60px] space-y-2 text-left">
                 <p>
-                  Laboratorium Komputer <br />
+                  Layanan Mahasiswa <br />
                   Fakultas Ilmu Komputer
                 </p>
                 <p className="font-bold text-[18px] text-left">
