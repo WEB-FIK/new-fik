@@ -12,7 +12,7 @@ const Peminatan: React.FC = () => {
           subtitle="Peminatan yang terdapat pada Program Diploma Sistem Informasi Fakultas komputer UPNVJ."
           textAlign="right"
         />
-        <div className=''>
+        <div className='flex justify-center text-center items-center'>
           <PeminatanCard data={peminatanDiplomaSistemInformasi} />
         </div>
       </section>
