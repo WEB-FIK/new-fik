@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { PermohonanSuratAkademikProps } from '@/data/PermohonanSuratAkademik';
+import { PermohonanSuratAkademikProps } from '@/data/dataFormLayananMahasiswa';
 
 interface LayananMahasiswaCardProps {
   data: PermohonanSuratAkademikProps[];

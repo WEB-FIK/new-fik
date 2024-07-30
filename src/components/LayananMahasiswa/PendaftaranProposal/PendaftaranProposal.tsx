@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeader from "@/components/ui/SectionHeader/SectionHeader";
-import { dataPendaftaranProposal } from "@/data/PermohonanSuratAkademik";
+import { dataPendaftaranProposal } from "@/data/dataFormLayananMahasiswa";
 import LayananMahasiswaCard from "@/components/ui/LayananMahasiswaCard/LayananMahasiswaCard"; 
 
 const PendaftaranProposal: React.FC = () => {

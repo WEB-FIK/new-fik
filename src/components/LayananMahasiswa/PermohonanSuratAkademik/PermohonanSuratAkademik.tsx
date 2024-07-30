@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeader from "@/components/ui/SectionHeader/SectionHeader";
-import { dataPermohonanSuratAkademik } from "@/data/PermohonanSuratAkademik";
+import { dataPermohonanSuratAkademik } from "@/data/dataFormLayananMahasiswa";
 import LayananMahasiswaCard from "@/components/ui/LayananMahasiswaCard/LayananMahasiswaCard"; 
 
 const PermohonanSuratAkademik: React.FC = () => {

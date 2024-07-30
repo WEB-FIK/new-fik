@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeader from "@/components/ui/SectionHeader/SectionHeader";
-import { dataAdministrasiSkripsi } from "@/data/PermohonanSuratAkademik";
+import { dataAdministrasiSkripsi } from "@/data/dataFormLayananMahasiswa";
 import LayananMahasiswaCard from "@/components/ui/LayananMahasiswaCard/LayananMahasiswaCard"; 
 
 const AdministrasiSkripsi: React.FC = () => {
@@ -9,7 +9,7 @@ const AdministrasiSkripsi: React.FC = () => {
       <SectionHeader
         title="Administrasi Skripsi & Tugas Akhir"
         subtitle="Pengelolaan proses administrasi skripsi dan tugas akhir, termasuk pendaftaran sidang dan pembimbingan."
-        textAlign="left"
+        textAlign="right"
       />
       <div className="flex justify-center items-center md:pt-8">
       <LayananMahasiswaCard data={dataAdministrasiSkripsi} />
