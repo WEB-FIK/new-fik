@@ -13,6 +13,16 @@ import FikFair from "../../public/images/FikFair.png";
 import Slashcom from "../../public/images/Slashcom.png";
 import PemiraFIK from "../../public/images/PemiraFIK.png";
 import FKBMIK from "../../public/images/FKBMIK.png";
+import TKLily from "../../public/images/TKLily.png";
+import TKLily2 from "../../public/images/TKLily2.png";
+import TKLily3 from "../../public/images/TKLily3.png";
+import PelatihanDigMar from "../../public/images/PelatihanDigMar.png";
+import PelatihanAkuntansi from "../../public/images/TKLily.png";
+import FIKdanHAICT from "../../public/images/FIKdanHAICT.png";
+import IKATIK from "../../public/images/IKATIK.png";
+import YudisiumFIK from "../../public/images/YudisiumFIK.png";
+import FIKInnovationWeek from "../../public/images/FIKInnovationWeek.png";
+import ComputerPlanFromSchool from "../../public/images/ComputerPlanFromSchool.png";
 
 export interface KehidupanMahasiswaCardProps {
   title: string;
@@ -20,6 +30,12 @@ export interface KehidupanMahasiswaCardProps {
   image: StaticImageData;
   link: string;
   linkTitle: string;
+}
+
+export interface galeriFotoProps {
+  path: string;
+  image: StaticImageData;
+  description: string;
 }
 
 export const dataOrganisasiMahasiswa: KehidupanMahasiswaCardProps[] = [
@@ -137,5 +153,66 @@ export const dataKepanitiaanMahasisiwa: KehidupanMahasiswaCardProps[] = [
     image: Slashcom,
     link: "https://www.instagram.com/slashcom2024/",
     linkTitle: "slashcom2024",
+  },
+];
+
+export const dataGaleriFoto: galeriFotoProps[] = [
+  {
+    path: "/",
+    image: TKLily,
+    description:
+      "Pelatihan Teknologi Informasi dalam Peningkatan Mutu Literasi Digital di TK Lily Pre-School",
+  },
+  {
+    path: "/",
+    image: PelatihanDigMar,
+    description:
+      "FIK UPNVJ Melaksanakan Pelatihan Digital Marketing pada UMKM Kampung Wisata Kuliner Bandung",
+  },
+  {
+    path: "/",
+    image: PelatihanAkuntansi,
+    description:
+      "FIK dan FEB UPNVJ Melaksanakan Pelatihan Akuntasi pada UMKM Kampung Wisata Kuliner Bandung",
+  },
+  {
+    path: "/",
+    image: TKLily2,
+    description:
+      "Pelatihan Teknologi Informasi dalam Peningkatan Mutu Literasi Digital di TK Lily Pre-School",
+  },
+  {
+    path: "/",
+    image: TKLily3,
+    description:
+      "Pelatihan Teknologi Informasi dalam Peningkatan Mutu Literasi Digital di TK Lily Pre-School",
+  },
+  {
+    path: "/",
+    image: ComputerPlanFromSchool,
+    description: "Pelaksanaan Program Computer Plan From School oleh BEM FIK",
+  },
+  {
+    path: "/",
+    image: FIKdanHAICT,
+    description: "Penjajakan Kerja Sama FIK UPNVJ dengan HAICT, Inc, KOIPA",
+  },
+  {
+    path: "/",
+    image: FIKInnovationWeek,
+    description:
+      "Mahasiswa FIK UPNVJ Berhasil Menjuarai Lomba Innovation Week #4 Tahun 2024",
+  },
+  {
+    path: "/",
+    image: IKATIK,
+    description:
+      "Silaturahmi IKATIK dan Buka Bersama FIK UPNVJ Bulan Ramadhan 1445 H",
+  },
+  {
+    path: "/",
+    image: YudisiumFIK,
+    description:
+      "Pelaksanaan Yudisium dan Pembekalan Calon Wisudawan FIK ke 72",
   },
 ];
