@@ -7,7 +7,7 @@ import HimaS1SI from "../../public/images/HimaS1SI.png";
 import KSMCyber from "../../public/images/KSMCyber.png";
 import KSMAndroid from "../../public/images/KSMAndroid.png";
 import KSMMultimedia from "../../public/images/KSMMultimedia.png";
-import KSMrobotika from "../../public/images/KSMrobotika.png";
+import KSMRobotika from "../../public/images/KSMRobotika.png";
 import KSMIArRisalah from "../../public/images/KSMIArRisalah.png";
 
 export interface KehidupanMahasiswaCardProps {
@@ -44,6 +44,14 @@ export const dataOrganisasiMahasiswa: KehidupanMahasiswaCardProps[] = [
     linkTitle: "hmif_upnvj",
   },
   {
+    title: "HIMA S1 Sistem Informasi",
+    description:
+      "Badan Eksekutif Mahasiswa (BEM) Fakultas Ilmu Komputer Universitas Pembangunan Nasional Veteran Jakarta (FIK UPNVJ) adalah organisasi kemahasiswaan di tingkat fakultas yang bertugas menjalankan peran eksekutif di lingkungan FIK UPNVJ. BEM FIK UPNVJ berperan penting dalam mengkoordinasikan berbagai kegiatan mahasiswa, menyuarakan aspirasi mahasiswa, dan mendorong pengembangan bakat serta minat di bidang ilmu komputer. ",
+    image: HimaS1SI,
+    link: "https://www.instagram.com/himas1siupnvj",
+    linkTitle: "himas1siupnvj",
+  },
+  {
     title: "HIMA D3 Sistem Informasi",
     description:
       "Badan Eksekutif Mahasiswa (BEM) Fakultas Ilmu Komputer Universitas Pembangunan Nasional Veteran Jakarta (FIK UPNVJ) adalah organisasi kemahasiswaan di tingkat fakultas yang bertugas menjalankan peran eksekutif di lingkungan FIK UPNVJ. BEM FIK UPNVJ berperan penting dalam mengkoordinasikan berbagai kegiatan mahasiswa, menyuarakan aspirasi mahasiswa, dan mendorong pengembangan bakat serta minat di bidang ilmu komputer. ",
@@ -52,12 +60,12 @@ export const dataOrganisasiMahasiswa: KehidupanMahasiswaCardProps[] = [
     linkTitle: "himad3si_upnvj",
   },
   {
-    title: "HIMA S1 Sistem Informasi",
+    title: "KSM Robotika",
     description:
-      "Badan Eksekutif Mahasiswa (BEM) Fakultas Ilmu Komputer Universitas Pembangunan Nasional Veteran Jakarta (FIK UPNVJ) adalah organisasi kemahasiswaan di tingkat fakultas yang bertugas menjalankan peran eksekutif di lingkungan FIK UPNVJ. BEM FIK UPNVJ berperan penting dalam mengkoordinasikan berbagai kegiatan mahasiswa, menyuarakan aspirasi mahasiswa, dan mendorong pengembangan bakat serta minat di bidang ilmu komputer. ",
-    image: HimaS1SI,
-    link: "https://www.instagram.com/himas1siupnvj",
-    linkTitle: "himas1siupnvj",
+      "KSM Robotika Fakultas Ilmu Komputer UPNVJ adalah kelompok studi mahasiswa yang fokus pada pengembangan dan eksplorasi teknologi robotika. Mereka aktif dalam mendalami konsep-konsep teori dan aplikasi praktis dalam bidang robotika, seperti desain robot, pemrograman, dan pengembangan sistem kontrol. ",
+    image: KSMRobotika,
+    link: "https://www.instagram.com/robotikaupnvj/",
+    linkTitle: "robotikaupnvj",
   },
   {
     title: "KSM Android",
