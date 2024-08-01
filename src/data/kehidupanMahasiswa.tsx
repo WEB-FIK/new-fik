@@ -9,6 +9,10 @@ import KSMAndroid from "../../public/images/KSMAndroid.png";
 import KSMMultimedia from "../../public/images/KSMMultimedia.png";
 import KSMRobotika from "../../public/images/KSMRobotika.png";
 import KSMIArRisalah from "../../public/images/KSMIArRisalah.png";
+import FikFair from "../../public/images/FikFair.png";
+import Slashcom from "../../public/images/Slashcom.png";
+import PemiraFIK from "../../public/images/PemiraFIK.png";
+import FKBMIK from "../../public/images/FKBMIK.png";
 
 export interface KehidupanMahasiswaCardProps {
   title: string;
@@ -98,5 +102,40 @@ export const dataOrganisasiMahasiswa: KehidupanMahasiswaCardProps[] = [
     image: KSMIArRisalah,
     link: "https://www.instagram.com/ksmi_arrisalah/",
     linkTitle: "ksmi_arrisalah",
+  },
+];
+
+export const dataKepanitiaanMahasisiwa: KehidupanMahasiswaCardProps[] = [
+  {
+    title: "FIK FAIR (Fakultas Ilmu Komputer Fair)",
+    description:
+      "FIK FAIR adalah acara tahunan yang diselenggarakan oleh Fakultas Ilmu Komputer Universitas Pembangunan Nasional Veteran Jakarta (UPNVJ). Acara ini mencakup berbagai perlombaan yang dirancang untuk menguji kemampuan akademik dan non-akademik para peserta. FIK FAIR  bertujuan untuk mendorong semangat kompetisi yang sehat, mengembangkan keterampilan peserta, dan mempererat hubungan antar mahasiswa di lingkungan fakultas.",
+    image: FikFair,
+    link: "https://www.instagram.com/fik.fair/",
+    linkTitle: "fik.fair",
+  },
+  {
+    title: "Festival Keluarga Besar Mahasiswa Ilmu Komputer",
+    description:
+      "Festival Keluarga Besar Mahasiswa Ilmu Komputer atau disingkat FKBM-IK merupakan kegiatan kolaborasi yang diselenggarakan oleh tiga organisasi mahasiswa UPN “Veteran” se-Indonesia. Kegiatan ini merupakan kegiatan tahunan yang diselenggarakan secara rutin dan memiliki tuan rumah yang berganti secara bergiliran.",
+    image: FKBMIK,
+    link: "https://www.instagram.com/fkbmik_upn/",
+    linkTitle: "fkbmik_upn",
+  },
+  {
+    title: "Pemira FIK UPNVJ",
+    description:
+      "PEMIRA (Pemilihan Raya) Fakultas Ilmu Komputer Universitas Pembangunan Nasional Veteran Jakarta (FIK UPNVJ) adalah sebuah tim yang dibentuk untuk mengorganisir dan menyelenggarakan pemilihan umum di lingkungan fakultas. Tujuan utama kepanitiaan ini adalah untuk memastikan proses pemilihan berlangsung secara adil, transparan, dan demokratis, sehingga mahasiswa dapat memilih perwakilan mereka di Badan Eksekutif Mahasiswa (BEM) dan lembaga kemahasiswaan lainnya. ",
+    image: PemiraFIK,
+    link: "https://www.instagram.com/pemirafikupnvj/",
+    linkTitle: "pemirafikupnvj",
+  },
+  {
+    title: "SLASH NATIONAL COMPETITION",
+    description:
+      "SLASH NATIONAL COMPETITION adalah sebuah ajang perlombaan nasional yang ditujukan khusus untuk bidang komputer dan teknologi, dengan tujuan mengasah kemampuan dan kreativitas para peserta di bidang tersebut. Kepanitiaan ini terdiri dari mahasiswa FIK UPNVJ yang berdedikasi dalam merancang, mengorganisir, dan menjalankan berbagai kompetisi, seperti hackathon, lomba pemrograman, desain aplikasi, dan inovasi teknologi.",
+    image: Slashcom,
+    link: "https://www.instagram.com/slashcom2024/",
+    linkTitle: "slashcom2024",
   },
 ];
