@@ -2,9 +2,8 @@ import React, { useMemo } from "react";
 import { dataBeasiswa, dataBeasiswaProps } from "@/data/dataBeasiswa";
 import BeasiswaCardItem from "./BeasiswaCardItem";
 
-// Explicitly define props type
 interface BeasiswaCardListProps {
-  beasiswa: dataBeasiswaProps;
+  scholarships: dataBeasiswaProps[];
 }
 
 /**
@@ -21,7 +20,7 @@ const BeasiswaCardList: React.FC<BeasiswaCardListProps> = () => {
       return <div>No scholarship data available.</div>;
     }
 
-    return dataBeasiswa.map((beasiswa) => (
+    return dataBeasiswa.map((beasiswa: dataBeasiswaProps) => (
       <BeasiswaCardItem key={beasiswa.id} beasiswa={beasiswa} />
     ));
   }, []);

@@ -1,5 +1,6 @@
 import BeasiswaCardList from "@/components/ui/BeasiswaCard/BeasiswaCardList";
 import SectionHeader from "@/components/ui/SectionHeader/SectionHeader";
+import { dataBeasiswa } from "@/data/dataBeasiswa";
 import React from "react";
 
 function JenisBeasiswa() {
@@ -12,7 +13,7 @@ function JenisBeasiswa() {
       />
 
       <div>
-        <BeasiswaCardList />
+        <BeasiswaCardList scholarships={dataBeasiswa} />
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ import { truncateText } from "@/lib/utils";
 import { dataBeasiswaProps } from "@/data/dataBeasiswa";
 
 interface BeasiswaCardItemProps {
-  beasiswa: dataBeasiswaProps;
+  beasiswa?: dataBeasiswaProps;
 }
 
 const BeasiswaCardItem: React.FC<BeasiswaCardItemProps> = memo(
