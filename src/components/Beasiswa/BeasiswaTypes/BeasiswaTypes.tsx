@@ -1,4 +1,4 @@
-import BeasiswaCard from "@/components/ui/BeasiswaCard/BeasiswaCard";
+import BeasiswaCardList from "@/components/ui/BeasiswaCard/BeasiswaCardList";
 import SectionHeader from "@/components/ui/SectionHeader/SectionHeader";
 import React from "react";
 
@@ -12,7 +12,7 @@ function JenisBeasiswa() {
       />
 
       <div>
-        <BeasiswaCard/>
+        <BeasiswaCardList />
       </div>
     </section>
   );
