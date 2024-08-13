@@ -2,8 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-import ManajemenHeaderMobile from "../../../../public/images/ManajemenHeaderMobile.png";
-import ManajemenHeaderDesktop from "../../../../public/images/ManajemenHeaderDesktop.png";
+import KehidupanKampusHeaderMobile from "../../../../public/images/KehidupanKampusHeaderMobile.png";
+import KehidupanKampusHeaderDesktop from "../../../../public/images/KehidupanKampusHeaderDesktop.png";
 import { useAOS } from "@/hooks/useAOS";
 
 const HeaderContent = ({ isMobile }: { isMobile: boolean }) => (
@@ -13,7 +13,9 @@ const HeaderContent = ({ isMobile }: { isMobile: boolean }) => (
     }`}
   >
     <Image
-      src={isMobile ? ManajemenHeaderMobile : ManajemenHeaderDesktop}
+      src={
+        isMobile ? KehidupanKampusHeaderMobile : KehidupanKampusHeaderDesktop
+      }
       alt="Laboratorium Header"
       className="w-full h-full object-cover"
     />
