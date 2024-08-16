@@ -6,47 +6,64 @@ import KehidupanKampusHeaderMobile from "../../../../public/images/KehidupanKamp
 import KehidupanKampusHeaderDesktop from "../../../../public/images/KehidupanKampusHeaderDesktop.png";
 import { useAOS } from "@/hooks/useAOS";
 
-const HeaderContent = ({ isMobile }: { isMobile: boolean }) => (
-  <div
-    className={`relative w-full h-[${isMobile ? "279px" : "550px"}] ${
-      isMobile ? "block md:hidden" : "hidden md:block"
-    }`}
-  >
-    <Image
-      src={
-        isMobile ? KehidupanKampusHeaderMobile : KehidupanKampusHeaderDesktop
-      }
-      alt="Laboratorium Header"
-      className="w-full h-full object-cover"
-    />
-    <div className="absolute inset-0 flex flex-col justify-center items-end text-white text-right px-8 md:px-24">
-      <div className={`w-full md:w-auto md:flex md:flex-col md:items-end`}>
-        <div
-          className={`w-[90%] md:w-[100%] font-bold text-[${
-            isMobile ? "29px" : "60px"
-          }] md:text-[60px] space-y-2 text-left`}
-          data-aos="fade-right"
-        >
-          <p>
-            Kehidupan Kampus <br />
-            Fakultas Ilmu Komputer
-          </p>
-          <p className="font-bold text-[18px] text-left" data-aos="fade-up">
-            UPN Veteran Jakarta
-          </p>
+const ResponsiveHeaderContent = () => {
+  return (
+    <>
+      <div className="relative w-full h-[279px] block md:hidden">
+        <Image
+          src={KehidupanKampusHeaderMobile}
+          alt="Kehidupan Kampus Fakultas Ilmu Komputer Header"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 flex flex-col justify-center text-white text-right px-4">
+          <div
+            className="w-[90%] font-bold text-[29px] space-y-2 text-left"
+            data-aos="fade-right"
+          >
+            <p>
+              Kehidupan Kampus <br />
+              Fakultas Ilmu Komputer
+            </p>
+            <p className="font-bold text-[18px] text-left" data-aos="fade-up">
+              UPN Veteran Jakarta
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-);
+
+      <div className="relative w-full h-[550px] hidden md:block">
+        <Image
+          src={KehidupanKampusHeaderDesktop}
+          alt="Kehidupan Kampus Fakultas Ilmu Komputer Header"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 flex flex-col justify-center items-end text-white text-right px-24">
+          <div className="w-full md:w-auto md:flex md:flex-col md:items-end">
+            <div
+              className="w-[100%] font-bold text-[60px] space-y-2 text-left"
+              data-aos="fade-right"
+            >
+              <p>
+                Kehidupan Kampus <br />
+                Fakultas Ilmu Komputer
+              </p>
+              <p className="font-bold text-[18px] text-left" data-aos="fade-up">
+                UPN Veteran Jakarta
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 
 const KehidupanKampusHeader = () => {
   useAOS();
 
   return (
     <section>
-      <HeaderContent isMobile={true} />
-      <HeaderContent isMobile={false} />
+      <ResponsiveHeaderContent />
     </section>
   );
 };
