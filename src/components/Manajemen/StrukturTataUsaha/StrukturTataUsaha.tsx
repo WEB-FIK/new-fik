@@ -21,7 +21,6 @@ const StrukturTataUsaha = () => {
       />
       <div className="w-full flex flex-col items-center space-y-5 md:pt-5 md:grid md:gap-4 md:space-y-0">
         {filteredKoorTUDetails.map((person, index: number) => {
-          // Abstracted variables for readability and flexibility
           const colSpan = index === 0 ? "md:col-span-3" : "md:col-span-1";
           const aosType = index === 0 ? "fade-down" : "fade-up";
 
