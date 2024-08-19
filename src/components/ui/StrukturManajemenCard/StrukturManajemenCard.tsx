@@ -8,6 +8,7 @@ interface StrukturManajemenCardProps {
   image: StaticImageData;
   name: string;
   position: string;
+  role: string;
   showMenu?: boolean;
   profileRoute?: string;
   lhkpnRoute?: string;
@@ -17,6 +18,7 @@ const StrukturManajemenCard: React.FC<StrukturManajemenCardProps> = ({
   image,
   name,
   position,
+  role,
   showMenu,
   profileRoute,
   lhkpnRoute,
