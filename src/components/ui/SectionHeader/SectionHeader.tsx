@@ -5,6 +5,7 @@ interface SectionHeaderProps {
   subtitle: string;
   textAlign?: "left" | "right" | "center";
   aosAnimation?: string;
+  className?: string;
 }
 
 const SectionHeader: React.FC<SectionHeaderProps> = ({
@@ -12,24 +13,24 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
   subtitle,
   textAlign = "left",
   aosAnimation = "fade-down",
+  className = "",
 }) => {
   const alignmentClasses = `text-${textAlign}`;
   const layoutClasses = textAlign === "right" ? "flex-row-reverse" : "flex-row";
-
   const maxWidth = "max-w-[50%]";
+  const justifyContent =
+    textAlign === "center" ? "justify-center" : "justify-between";
 
   return (
     <div
-      className={`flex flex-col items-${textAlign} ${alignmentClasses}`}
+      className={`flex flex-col items-${textAlign} ${alignmentClasses} ${className}`}
       data-aos={aosAnimation}
     >
       <div
-        className={`flex items-center justify-between gap-x-8 ${layoutClasses}`}
+        className={`flex items-center ${justifyContent} gap-x-8 ${layoutClasses}`}
       >
         <p
-          className={`text-[24px] font-extrabold md:text-[48px] ${maxWidth} ${
-            textAlign === "right" ? "text-right" : "text-left"
-          }`}
+          className={`text-[24px] font-extrabold md:text-[48px] ${maxWidth} ${alignmentClasses}`}
         >
           {title}
         </p>
