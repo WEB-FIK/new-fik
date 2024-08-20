@@ -125,7 +125,7 @@ export const kepalaLabDetails: manajemenDetail[] = [
     image: KepalaLabMultimedia,
     name: "I Wayan Widi Pradnyana, M.TI",
     position: "Kalab. Pengembangan Sistem dan Multimedia",
-    role: "KaLab",
+    role: "Kepala Lab",
     profileRoute: "/manajemen/profile/i-wayan-widi-pradnyana",
   },
 ];
