@@ -28,7 +28,7 @@ const StrukturKaprodi = () => {
         {filteredKaprodi.map((person, index) => (
           <div
             className="flex flex-col items-center justify-center md:flex-row"
-            key={person.name} // Use name as a unique key
+            key={person.name}
             data-aos={getAosType(index)}
           >
             <StrukturManajemenCard
