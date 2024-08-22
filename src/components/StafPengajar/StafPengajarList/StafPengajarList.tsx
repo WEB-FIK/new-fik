@@ -10,7 +10,7 @@ import {
 } from "@/data/manajemenDetails";
 import StrukturManajemenCard from "@/components/ui/StrukturManajemenCard/StrukturManajemenCard";
 import FilterStafPengajarMenu from "@/components/ui/FilterStafPengajarMenu/FilterStafPengajarMenu";
-import Pagination from "@/components/ui/Pagination/pagination";
+import Pagination from "@/components/ui/Pagination/Pagination";
 import { useStafPengajar } from "@/hooks/useStafPengajar";
 
 function StafPengajarList() {
