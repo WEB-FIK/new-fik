@@ -92,7 +92,9 @@ function StafPengajarList() {
             <Pagination
               totalPages={totalPages}
               currentPage={currentPage}
-              handlePageChange={handlePageChange}
+              onPageChange={handlePageChange}
+              showFirstLastButtons
+              showPreviousNextButtons
             />
           )}
         </div>
