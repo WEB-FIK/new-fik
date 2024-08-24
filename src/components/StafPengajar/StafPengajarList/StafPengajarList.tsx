@@ -11,7 +11,7 @@ import {
 import StrukturManajemenCard from "@/components/ui/StrukturManajemenCard/StrukturManajemenCard";
 import FilterStafPengajarMenu from "@/components/ui/FilterStafPengajarMenu/FilterStafPengajarMenu";
 import Pagination from "@/components/ui/Pagination/Pagination";
-import { useStafPengajar } from "@/hooks/useStafPengajar";
+import { useStafPengajar } from "@/hooks//useStafPengajar/useStafPengajar";
 
 function StafPengajarList() {
   const allData = [
@@ -43,8 +43,8 @@ function StafPengajarList() {
       <div className="flex flex-col md:flex-row py-16 md:gap-x-16">
         <FilterStafPengajarMenu
           filterOpen={filterOpen}
-          handleFilterMenu={() => setFilterOpen(!filterOpen)}
-          setSelectedStatus={setSelectedStatus} // Pass setSelectedStatus
+          handleFilterMenu={() => setFilterOpen()}
+          setSelectedStatus={setSelectedStatus}
         />
 
         <div className="w-full md:w-3/4 md:space-y-10">
