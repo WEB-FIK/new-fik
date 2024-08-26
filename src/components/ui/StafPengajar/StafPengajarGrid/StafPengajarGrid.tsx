@@ -12,6 +12,7 @@ const StafPengajarGrid: React.FC<StafPengajarGridProps> = ({ items }) => (
         <StrukturManajemenCard
           image={item.image}
           name={item.name}
+          role={item.role}
           position={item.position}
           lhkpnRoute={item.lhkpnRoute}
           profileRoute={item.profileRoute}
