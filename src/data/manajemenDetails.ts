@@ -62,7 +62,7 @@ export const dekanatDetails: manajemenDetail[] = [
     name: "Ati Zaidiah, S.Kom, MTI.",
     position: "Wakil Dekan Bidang Kemahasiswaan dan Kerja Sama",
     role: "Dekanat",
-    status: "Pengajar TIdak Tetap",
+    status: "Pengajar Tidak Tetap",
     profileRoute: "/manajemen/profile/ati-zaidiah",
     lhkpnRoute: "/manajemen/LHKPN/ati-zaidiah",
     linkLHKPN:
