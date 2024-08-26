@@ -17,6 +17,7 @@ export interface manajemenDetail {
   name: string;
   position: string;
   role: string;
+  status: string;
   profileRoute?: string;
   lhkpnRoute?: string;
   linkLHKPN?: string;
@@ -28,6 +29,7 @@ export const dekanatDetails: manajemenDetail[] = [
     name: "Prof. Dr. Ir. Supriyanto, M.Sc., IPM.",
     position: "Dekan",
     role: "Dekanat",
+    status: "Pengajar Tetap",
     profileRoute: "/manajemen/profile/supriyanto",
     lhkpnRoute: "/manajemen/LHKPN/supriyanto",
     linkLHKPN:
@@ -38,6 +40,7 @@ export const dekanatDetails: manajemenDetail[] = [
     name: "Erly Krisnanik, S.Kom.,MM",
     position: "Wakil Dekan Bidang Akademik",
     role: "Dekanat",
+    status: "Pengajar Tetap",
     profileRoute: "/manajemen/profile/erly-krisnanik",
     lhkpnRoute: "/manajemen/LHKPN/erly-krisnanik",
     linkLHKPN:
@@ -48,6 +51,7 @@ export const dekanatDetails: manajemenDetail[] = [
     name: "Dr. Bambang Saras Yulistiawan, S.T.",
     position: "Wakil Dekan Bidang Umum dan Keuangan",
     role: "Dekanat",
+    status: "Pengajar Tetap",
     profileRoute: "/manajemen/profile/bambang-saras-yulistiawan",
     lhkpnRoute: "/manajemen/LHKPN/bambang-saras-yulistiawan",
     linkLHKPN:
@@ -58,6 +62,7 @@ export const dekanatDetails: manajemenDetail[] = [
     name: "Ati Zaidiah, S.Kom, MTI.",
     position: "Wakil Dekan Bidang Kemahasiswaan dan Kerja Sama",
     role: "Dekanat",
+    status: "Pengajar Tidak Tetap",
     profileRoute: "/manajemen/profile/ati-zaidiah",
     lhkpnRoute: "/manajemen/LHKPN/ati-zaidiah",
     linkLHKPN:
@@ -71,6 +76,7 @@ export const kaprodiDetails: manajemenDetail[] = [
     name: "Anita Muliawati, S.Kom. M.TI",
     position: "Ketua Jurusan merangkap Kaprodi S1 Sistem Informasi",
     role: "Kaprodi",
+    status: "Pengajar Tetap",
     profileRoute: "/manajemen/profile/anita-muliawati",
   },
   {
@@ -78,6 +84,7 @@ export const kaprodiDetails: manajemenDetail[] = [
     name: "Rio Wirawan, S.Kom., MMSI.",
     position: "Kaprodi D3 Sistem Informasi",
     role: "Kaprodi",
+    status: "Pengajar Tidak Tetap",
     profileRoute: "/manajemen/profile/rio-wirawan",
   },
   {
@@ -85,6 +92,7 @@ export const kaprodiDetails: manajemenDetail[] = [
     name: "Dr. Widya Cholil, M.I.T",
     position: "Kaprodi S1 Informatika",
     role: "Kaprodi",
+    status: "Pengajar Tetap",
     profileRoute: "/manajemen/profile/widya-cholil",
   },
 ];
@@ -95,6 +103,7 @@ export const koorTUDetails: manajemenDetail[] = [
     name: "Saimin, S.Kom",
     position: "Koordinator Tata Usaha",
     role: "Tata Usaha",
+    status: "Pengajar Tidak Tetap",
     profileRoute: "/manajemen/profile/saimin",
   },
 ];
@@ -105,6 +114,7 @@ export const kepalaLabDetails: manajemenDetail[] = [
     name: "Hamonangan Kinantan P., S.T, MT",
     position: "Kalab. Keamanan Siber, Jaringan, Dan Internet Of Things",
     role: "Kepala Lab",
+    status: "Pengajar Tetap",
     profileRoute: "/manajemen/profile/hamonangan-kinantan",
   },
   {
@@ -112,6 +122,7 @@ export const kepalaLabDetails: manajemenDetail[] = [
     name: "Muhammad Adrezo, S.Kom.,M.Sc",
     position: "Kalab. Rekayasa Perangkat Lunak, Pemrograman, dan Basis Data",
     role: "Kepala Lab",
+    status: "Pengajar Tetap",
     profileRoute: "/manajemen/profile/muhammad-adrezo",
   },
   {
@@ -119,6 +130,7 @@ export const kepalaLabDetails: manajemenDetail[] = [
     name: "Dr. Tjahjanto, S.Kom., M.M.",
     position: "Kalab. Data Science dan Data Mining",
     role: "Kepala Lab",
+    status: "Pengajar Tetap",
     profileRoute: "/manajemen/profile/tjahjanto",
   },
   {
@@ -126,6 +138,7 @@ export const kepalaLabDetails: manajemenDetail[] = [
     name: "I Wayan Widi Pradnyana, M.TI",
     position: "Kalab. Pengembangan Sistem dan Multimedia",
     role: "Kepala Lab",
+    status: "Pengajar Tetap",
     profileRoute: "/manajemen/profile/i-wayan-widi-pradnyana",
   },
 ];
