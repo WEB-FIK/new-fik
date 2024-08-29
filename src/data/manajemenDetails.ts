@@ -16,100 +16,129 @@ export interface manajemenDetail {
   image: StaticImageData;
   name: string;
   position: string;
+  role: string;
+  status: string;
   profileRoute?: string;
   lhkpnRoute?: string;
   linkLHKPN?: string;
 }
 
 export const dekanatDetails: manajemenDetail[] = [
-  { 
+  {
     image: Dekan,
-    name: "Prof. Dr. Ir. Supriyanto, M.Sc., IPM.", 
-    position: "Dekan", 
-    profileRoute: "/manajemen/profile/supriyanto", 
+    name: "Prof. Dr. Ir. Supriyanto, M.Sc., IPM.",
+    position: "Dekan",
+    role: "Dekanat",
+    status: "Pengajar Tetap",
+    profileRoute: "/manajemen/profile/supriyanto",
     lhkpnRoute: "/manajemen/LHKPN/supriyanto",
-    linkLHKPN: "https://drive.google.com/file/d/13JqFUD3q3T_jDgfYHvKNbEIsbeFwB3u1/view"
+    linkLHKPN:
+      "https://drive.google.com/file/d/13JqFUD3q3T_jDgfYHvKNbEIsbeFwB3u1/view",
   },
-  { 
+  {
     image: WadekAkademik,
-    name: "Erly Krisnanik, S.Kom.,MM", 
-    position: "Wakil Dekan Bidang Akademik", 
-    profileRoute: "/manajemen/profile/erly-krisnanik", 
+    name: "Erly Krisnanik, S.Kom.,MM",
+    position: "Wakil Dekan Bidang Akademik",
+    role: "Dekanat",
+    status: "Pengajar Tetap",
+    profileRoute: "/manajemen/profile/erly-krisnanik",
     lhkpnRoute: "/manajemen/LHKPN/erly-krisnanik",
-    linkLHKPN: "https://drive.google.com/file/d/1suxmjkfpBZe8Of6jWl3T8nk8_nDS9Dvm/view?usp=sharing" 
+    linkLHKPN:
+      "https://drive.google.com/file/d/1suxmjkfpBZe8Of6jWl3T8nk8_nDS9Dvm/view?usp=sharing",
   },
-  { 
+  {
     image: WadekKeuangan,
-    name: "Dr. Bambang Saras Yulistiawan, S.T.", 
-    position: "Wakil Dekan Bidang Umum dan Keuangan", 
-    profileRoute: "/manajemen/profile/bambang-saras-yulistiawan", 
+    name: "Dr. Bambang Saras Yulistiawan, S.T.",
+    position: "Wakil Dekan Bidang Umum dan Keuangan",
+    role: "Dekanat",
+    status: "Pengajar Tetap",
+    profileRoute: "/manajemen/profile/bambang-saras-yulistiawan",
     lhkpnRoute: "/manajemen/LHKPN/bambang-saras-yulistiawan",
-    linkLHKPN: "https://drive.google.com/file/d/1lgLB81KOtmndAbfhQrQKS74ECjccjCeO/view?usp=sharing" 
+    linkLHKPN:
+      "https://drive.google.com/file/d/1lgLB81KOtmndAbfhQrQKS74ECjccjCeO/view?usp=sharing",
   },
-  { 
+  {
     image: WadekKemahasiswaan,
-    name: "Ati Zaidiah, S.Kom, MTI.", 
-    position: "Wakil Dekan Bidang Kemahasiswaan dan Kerja Sama", 
-    profileRoute: "/manajemen/profile/ati-zaidiah", 
+    name: "Ati Zaidiah, S.Kom, MTI.",
+    position: "Wakil Dekan Bidang Kemahasiswaan dan Kerja Sama",
+    role: "Dekanat",
+    status: "Pengajar Tidak Tetap",
+    profileRoute: "/manajemen/profile/ati-zaidiah",
     lhkpnRoute: "/manajemen/LHKPN/ati-zaidiah",
-    linkLHKPN: "https://drive.google.com/file/d/13YzYHIL2H21xzhlOm4J1rznfXIWWuH_f/view?usp=sharing" 
-  }
+    linkLHKPN:
+      "https://drive.google.com/file/d/13YzYHIL2H21xzhlOm4J1rznfXIWWuH_f/view?usp=sharing",
+  },
 ];
 
 export const kaprodiDetails: manajemenDetail[] = [
-  { 
+  {
     image: KaprodiS1Sisfor,
-    name: "Anita Muliawati, S.Kom. M.TI", 
-    position: "Ketua Jurusan merangkap Kaprodi S1 Sistem Informasi", 
-    profileRoute: "/manajemen/profile/anita-muliawati", 
+    name: "Anita Muliawati, S.Kom. M.TI",
+    position: "Ketua Jurusan merangkap Kaprodi S1 Sistem Informasi",
+    role: "Kaprodi",
+    status: "Pengajar Tetap",
+    profileRoute: "/manajemen/profile/anita-muliawati",
   },
-  { 
+  {
     image: KaprodiD3Sisfor,
-    name: "Rio Wirawan, S.Kom., MMSI.", 
-    position: "Kaprodi D3 Sistem Informasi", 
-    profileRoute: "/manajemen/profile/rio-wirawan", 
+    name: "Rio Wirawan, S.Kom., MMSI.",
+    position: "Kaprodi D3 Sistem Informasi",
+    role: "Kaprodi",
+    status: "Pengajar Tidak Tetap",
+    profileRoute: "/manajemen/profile/rio-wirawan",
   },
-  { 
+  {
     image: KaprodiS1Informatika,
-    name: "Dr. Widya Cholil, M.I.T", 
-    position: "Kaprodi S1 Informatika", 
-    profileRoute: "/manajemen/profile/widya-cholil", 
+    name: "Dr. Widya Cholil, M.I.T",
+    position: "Kaprodi S1 Informatika",
+    role: "Kaprodi",
+    status: "Pengajar Tetap",
+    profileRoute: "/manajemen/profile/widya-cholil",
   },
 ];
 
 export const koorTUDetails: manajemenDetail[] = [
-  { 
+  {
     image: KoordinatorTU,
-    name: "Saimin, S.Kom", 
-    position: "Koordinator Tata Usaha", 
+    name: "Saimin, S.Kom",
+    position: "Koordinator Tata Usaha",
+    role: "Tata Usaha",
+    status: "Pengajar Tidak Tetap",
     profileRoute: "/manajemen/profile/saimin",
   },
 ];
 
-
 export const kepalaLabDetails: manajemenDetail[] = [
-  { 
+  {
     image: KepalaLabCyber,
-    name: "Hamonangan Kinantan P., S.T, MT", 
-    position: "Kalab. Keamanan Siber, Jaringan, Dan Internet Of Things", 
-    profileRoute: "/manajemen/profile/hamonangan-kinantan", 
+    name: "Hamonangan Kinantan P., S.T, MT",
+    position: "Kalab. Keamanan Siber, Jaringan, Dan Internet Of Things",
+    role: "Kepala Lab",
+    status: "Pengajar Tetap",
+    profileRoute: "/manajemen/profile/hamonangan-kinantan",
   },
-  { 
+  {
     image: KepalaLabDatabase,
-    name: "Muhammad Adrezo, S.Kom.,M.Sc", 
-    position: "Kalab. Rekayasa Perangkat Lunak, Pemrograman, dan Basis Data", 
-    profileRoute: "/manajemen/profile/muhammad-adrezo", 
+    name: "Muhammad Adrezo, S.Kom.,M.Sc",
+    position: "Kalab. Rekayasa Perangkat Lunak, Pemrograman, dan Basis Data",
+    role: "Kepala Lab",
+    status: "Pengajar Tetap",
+    profileRoute: "/manajemen/profile/muhammad-adrezo",
   },
-  { 
+  {
     image: KepalaLabDataScience,
-    name: "Dr. Tjahjanto, S.Kom., M.M.", 
-    position: "Kalab. Data Science dan Data Mining", 
-    profileRoute: "/manajemen/profile/tjahjanto", 
+    name: "Dr. Tjahjanto, S.Kom., M.M.",
+    position: "Kalab. Data Science dan Data Mining",
+    role: "Kepala Lab",
+    status: "Pengajar Tetap",
+    profileRoute: "/manajemen/profile/tjahjanto",
   },
-  { 
+  {
     image: KepalaLabMultimedia,
-    name: "I Wayan Widi Pradnyana, M.TI", 
-    position: "Kalab. Pengembangan Sistem dan Multimedia", 
-    profileRoute: "/manajemen/profile/i-wayan-widi-pradnyana", 
-  }
+    name: "I Wayan Widi Pradnyana, M.TI",
+    position: "Kalab. Pengembangan Sistem dan Multimedia",
+    role: "Kepala Lab",
+    status: "Pengajar Tetap",
+    profileRoute: "/manajemen/profile/i-wayan-widi-pradnyana",
+  },
 ];
