@@ -6,7 +6,7 @@ const graduateProfiles = [
     id: "PL01",
     title: "Sikap",
     content:
-      " Lulusan memiliki sikap tanggung jawab dan nilai-nilai dasar Universitas berdasarkan nilai agama, moral, etika akademik dan semangat kewirausahan",
+      "Lulusan memiliki sikap tanggung jawab dan nilai-nilai dasar Universitas berdasarkan nilai agama, moral, etika akademik dan semangat kewirausahan",
   },
   {
     id: "PL02",
@@ -37,19 +37,21 @@ function ProfilLulusan() {
         textAlign="right"
       />
 
-      <div className="flex flex-col justify-center items-center space-y-5 text-[14px] font-medium md:flex-row md:space-y-0 md:grid-cols-4 md:justify-between">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-16">
         {graduateProfiles.map((graduateProfile) => (
           <div
             key={graduateProfile.id}
-            className="w-[300px] min-h-[350px] border rounded-[16px] p-5 flex flex-col justify-center items-center gap-y-4"
+            className="w-full min-h-80 border rounded-[16px] p-5 flex flex-col items-center text-center"
           >
-            <div className="text-[32px] flex items-center justify-center font-semibold gap-x-1 text-primary-500">
-              <p>{graduateProfile.id}</p>
+            <div className="text-[32px] font-semibold text-primary-500 mb-4">
+              {graduateProfile.id}
             </div>
-            <span className="font-bold text-center text-[24px] ">
+            <span className="font-bold text-[24px] mb-4">
               {graduateProfile.title}
             </span>
-            <p className="text-center text-[18px] text-[#6B7280]">{graduateProfile.content}</p>
+            <p className="text-[18px] text-[#6B7280]">
+              {graduateProfile.content}
+            </p>
           </div>
         ))}
       </div>
