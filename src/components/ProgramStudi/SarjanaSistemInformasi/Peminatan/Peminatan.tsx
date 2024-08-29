@@ -1,7 +1,7 @@
-import React from 'react';
-import PeminatanCard from '@/components/ui/PeminatanCard/PeminatanCard';
-import SectionHeader from '@/components/ui/SectionHeader/SectionHeader';
-import { peminatanSarjanaSistemInformasi } from '@/data/peminatanProgramStudi';
+import React from "react";
+import PeminatanCard from "@/components/ui/PeminatanCard/PeminatanCard";
+import SectionHeader from "@/components/ui/SectionHeader/SectionHeader";
+import { peminatanSarjanaSistemInformasi } from "@/data/peminatanProgramStudi";
 
 const Peminatan: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const Peminatan: React.FC = () => {
           subtitle="Peminatan yang terdapat pada Program Sarjana Sistem Informasi Fakultas komputer UPNVJ."
           textAlign="right"
         />
-        <div>
+        <div className="flex justify-center text-center items-center">
           <PeminatanCard data={peminatanSarjanaSistemInformasi} />
         </div>
       </section>
