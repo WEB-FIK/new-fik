@@ -3,7 +3,7 @@ import HeroSection from "@/components/ProgramStudi/DiplomaSistemInformasi/HeroSe
 import ProfilLulusan from "@/components/ProgramStudi/ProfilLulusan/ProfilLulusan";
 import React from "react";
 import CapaianPembelajaranLulusan from "@/components/ProgramStudi/SarjanaSistemInformasi/CapaianPembelajaranLulusan/CapaianPembelajaranLulusan";
-import LamaStudi from "@/components/ProgramStudi/LamaStudi/LamaStudi";
+import LamaStudi from "@/components/ProgramStudi/DiplomaSistemInformasi/LamaStudi/LamaStudi";
 import KurikulumSarjanaSistemInformasi from "@/components/ProgramStudi/SarjanaSistemInformasi/KurikulumSarjanaSistemInformasi/KurikulumSarjanaSistemInformasi";
 import Peminatan from "@/components/ProgramStudi/DiplomaSistemInformasi/Peminatan/Peminatan";
 import FAQ from "@/components/ProgramStudi/FAQs/FAQ";
