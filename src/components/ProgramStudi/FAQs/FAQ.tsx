@@ -4,7 +4,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "@/components/ui/Accordion/Accordion";
 import SectionHeader from "@/components/ui/SectionHeader/SectionHeader";
 
 const faqDatas = [
