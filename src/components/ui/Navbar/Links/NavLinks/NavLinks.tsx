@@ -78,7 +78,7 @@ const NavLinks = ({ item }: { item: item }) => {
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
-              <div className="bg-red-600 shadow rounded-lg flex flex-col gap-3 p-4 mt-12">
+              <div className=" bg-white shadow rounded-lg flex flex-col gap-3 p-4 mt-12">
                 {item.menu &&
                   item.menu.map((v, i) => {
                     return (
