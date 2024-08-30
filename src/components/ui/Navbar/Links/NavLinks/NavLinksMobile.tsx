@@ -12,17 +12,19 @@ interface item {
   menu?: { name: string; path: string }[];
 }
 
-const NavLinks = ({ item }: { item: item }) => {
+const NavLinksMobile = ({
+  item,
+  value,
+  setValue,
+  index,
+}: {
+  item: item;
+  value: number | null;
+  index?: number;
+  setValue: React.Dispatch<React.SetStateAction<number | null>>;
+}) => {
   const pathName = usePathname();
   const [showDropdown, setShowDropdown] = useState(false);
-
-  const handleMouseEnter = () => {
-    setShowDropdown(true);
-  };
-
-  const handleMouseLeave = () => {
-    setShowDropdown(false);
-  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -43,15 +45,16 @@ const NavLinks = ({ item }: { item: item }) => {
   return (
     <div
       className={`${styles.container} px-8 md:px-[14px] relative   items-center text-[18px] font-bold flex gap-2`}
-      onMouseEnter={handleMouseEnter}
       onClick={() => {
-        if (showDropdown) {
-          setShowDropdown(false);
-        } else {
-          setShowDropdown(true);
+        if (index && item.menu) {
+          setValue(index);
         }
+        // if (showDropdown) {
+        //   setShowDropdown(false);
+        // } else {
+        //   setShowDropdown(true);
+        // }
       }}
-      onMouseLeave={handleMouseLeave}
     >
       {item.path ? (
         <Link
@@ -64,21 +67,13 @@ const NavLinks = ({ item }: { item: item }) => {
         </Link>
       ) : (
         <div className="flex gap-2 items-center md:w-auto w-full justify-between text-base md:text-[18px]">
-          <span
-            className="hover:text-primary-500 transition-all transform ease-in-out"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
+          <span className="hover:text-primary-500 transition-all transform ease-in-out">
             {item.name}
           </span>
           <IoIosArrowDown />
           {showDropdown && (
-            <div
-              className="absolute top-0 "
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <div className=" bg-white shadow rounded-lg flex flex-col gap-3 p-4 mt-12">
+            <div className="absolute top-0 ">
+              <div className="bg-red-600 shadow rounded-lg flex flex-col gap-3 p-4 mt-12">
                 {item.menu &&
                   item.menu.map((v, i) => {
                     return (
@@ -102,4 +97,4 @@ const NavLinks = ({ item }: { item: item }) => {
   );
 };
 
-export default NavLinks;
+export default NavLinksMobile;

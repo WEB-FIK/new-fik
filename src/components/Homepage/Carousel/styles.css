@@ -2,11 +2,11 @@
   height: 100%;
 }
 
-html,
+/* html,
 body {
   position: relative;
   height: 100%;
-}
+} */
 
 body {
   background: #eee;
@@ -53,7 +53,7 @@ body {
 .custom-pagination .swiper-pagination-bullet {
   width: 28px;
   height: 28px;
-  background: #EB5528;
+  background: #eb5528;
   opacity: 0.5; /* Default opacity */
   transition: opacity 0.3s;
 }
