@@ -12,10 +12,10 @@ function LamaStudi() {
 
       <div className="flex flex-col space-y-5 text-justify text-[14px] font-medium">
         <p className="text-[14px] font-medium md:text-[24px]">
-          Program Studi Diploma Sistem Informasi di FIK UPNVJ mencakup proses
+          Program Studi Sarjana Sistem Informasi di FIK UPNVJ mencakup proses
           pembelajaran setara dengan 144 satuan kredit semester (SKS) yang dapat
           diselesaikan dalam waktu empat tahun. Mahasiswa berhak menyandang
-          gelar Diploma Sistem Informasi setelah memperoleh minimum 144 SKS
+          gelar Sarjana Sistem Informasi setelah memperoleh minimum 144 SKS
           sesuai persyaratan kurikulum yang ditetapkan.
         </p>
       </div>
