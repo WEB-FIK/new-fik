@@ -35,19 +35,44 @@ function CarouselHomepage() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image src={RektoratUPN} alt="Rektorat UPN" role="img" className="w-full h-[320px] md:h-[745px]" />
+          <Image
+            src={RektoratUPN}
+            alt="Rektorat UPN"
+            role="img"
+            className="w-full h-[320px] md:h-[745px]"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={SelasarFIK} alt="Selasar FIK" role="img" className="w-full h-[320px] md:h-[745px]" />
+          <Image
+            src={SelasarFIK}
+            alt="Selasar FIK"
+            role="img"
+            className="w-full h-[320px] md:h-[745px]"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={TestOnLab} alt="Test On Lab" role="img" className="w-full h-[320px] md:h-[745px]" />
+          <Image
+            src={TestOnLab}
+            alt="Test On Lab"
+            role="img"
+            className="w-full h-[320px] md:h-[745px]"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={Labkom} alt="Labkom" role="img" className="w-full h-[320px] md:h-[745px]" />
+          <Image
+            src={Labkom}
+            alt="Labkom"
+            role="img"
+            className="w-full h-[320px] md:h-[745px]"
+          />
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={TwoPersons} alt="Two Persons" role="img" className="w-full h-[320px] md:h-[745px]" />
+          <Image
+            src={TwoPersons}
+            alt="Two Persons"
+            role="img"
+            className="w-full h-[320px] md:h-[745px]"
+          />
         </SwiperSlide>
         <div className="custom-pagination"></div>
       </Swiper>
