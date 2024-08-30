@@ -26,14 +26,14 @@ const NavLinksMobile = ({
   const pathName = usePathname();
   const [showDropdown, setShowDropdown] = useState(false);
 
-  const handleClickOutside = (event: MouseEvent) => {
-    if (event.target) {
-      if (!(event.target as Element).closest(`.${styles.container}`)) {
-        setShowDropdown(false);
-      }
-    }
-  };
   useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (event.target) {
+        if (!(event.target as Element).closest(`.${styles.container}`)) {
+          setShowDropdown(false);
+        }
+      }
+    };
     const handleDocumentClick = (event: MouseEvent) => {
       handleClickOutside(event);
     };
@@ -41,7 +41,7 @@ const NavLinksMobile = ({
     return () => {
       window.removeEventListener("click", handleDocumentClick);
     };
-  }, [handleClickOutside]);
+  }, []);
   return (
     <div
       className={`${styles.container} px-8 md:px-[14px] relative   items-center text-[18px] font-bold flex gap-2`}
@@ -78,6 +78,7 @@ const NavLinksMobile = ({
                   item.menu.map((v, i) => {
                     return (
                       <Link
+                        key={i}
                         href={v.path}
                         className={`text-start ${
                           pathName === v.path && styles.active
