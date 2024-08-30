@@ -12,9 +12,9 @@ export default function Home() {
       <CarouselHomepage />
       <ProgramStudi />
       <Berita />
-      <OurValues/>
-      <Agenda/>
-      <Partner/>
+      <OurValues />
+      <Agenda />
+      <Partner />
     </div>
   );
 }

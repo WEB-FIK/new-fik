@@ -21,10 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${plusJakartaSans.className} bg-white overflow-x-hidden`}>
-        {/* <Navbar /> */}
+      <body
+        className={`${plusJakartaSans.className} bg-white overflow-x-hidden`}
+      >
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
