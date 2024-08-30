@@ -4,7 +4,7 @@ function HeroSection() {
   return (
     <section className="min-h-[360px] md:min-h-[480px] w-full px-4 py-8 flex flex-col justify-center space-y-5 md:px-[100px]">
       <SectionHeader
-        title="Program Studi Sarjana
+        title="Program Studi Diploma
 Sistem Informasi"
         subtitle="Mengenal lebih lanjut gambaran umum  Fakultas komputer UPNVJ."
         textAlign="left"
@@ -12,20 +12,20 @@ Sistem Informasi"
 
       <div className="flex flex-col space-y-5 text-justify text-[14px] font-medium md:text-[24px]">
         <p>
-          Program Studi Sistem Informasi Program Sarjana, Fakultas Ilmu Komputer
-          UPN “Veteran” Jakarta adalah salah satu Program Studi yang
-          melaksanakan penyelenggaraan pendidikan Sarjana (S-1) dan telah
-          memperoleh pengesahan akreditasi BAN-PT berdasarkan keputusan BAN-PT
-          No: 2277/SK/BAN-PT/Akred/S/VII/2019 dengan peringkat “B”, status
-          akreditasi ini akan berakhir pada bulan Juli 2024.
-        </p>
-
-        <p>
-          Program Sarjana Sistem Informasi (SI) adalah program pendidikan tinggi
-          yang memadukan teknologi informasi dengan konsep manajemen bisnis.
-          Program ini bertujuan untuk menghasilkan lulusan yang memiliki
-          pemahaman mendalam tentang bagaimana teknologi informasi dapat
-          digunakan secara efektif untuk mendukung tujuan bisnis dan organisasi.
+          Program Studi DIII Sistem Informasi pada kampus Bela Universitas
+          Pembangunan Nasional Jakarta Negara menawarkan pendidikan berkualitas
+          yang menggabungkan pemahaman mendalam tentang sistem informasi dengan
+          keterampilan praktis dalam pemrograman, analisis data, dan bisnis
+          analisis. Kurikulumnya didukung oleh pendekatan praktis dan proyek
+          kolaboratif, mempersiapkan lulusan untuk menjadi programmer
+          profesional yang mahir dalam pengembangan perangkat lunak, data analis
+          yang terampil dalam menganalisis data untuk menghasilkan wawasan yang
+          berharga, serta bisnis analis yang memiliki pemahaman mendalam tentang
+          kebutuhan bisnis dan kemampuan untuk menghubungkan teknologi informasi
+          dengan tujuan bisnis organisasi. Lulusan program ini dilengkapi dengan
+          keterampilan komunikasi yang kuat dan kesadaran akan tanggung jawab,
+          profesional, berintegritas menjadikan mereka siap untuk menghadapi
+          tantangan di dunia industri teknologi informasi yang dinamis.
         </p>
       </div>
     </section>

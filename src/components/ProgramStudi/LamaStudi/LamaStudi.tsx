@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeader from "@/components/ui/SectionHeader/SectionHeader";
-import { AccordionProgramStudi } from "@/components/ui/Accordion/AccordionProgramStudi";
+import { AccordionProgramStudi } from "@/components/ui/Accordion/AccordionCPLProgramStudi";
 function LamaStudi() {
   return (
     <section className="bg-[#EDEDED] min-h-[200px] w-full px-4 py-8 flex flex-col justify-center space-y-5 md:px-[100px] md:min-h-[400px]">
