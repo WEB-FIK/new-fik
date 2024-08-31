@@ -10,12 +10,13 @@ const CardImage: React.FC<{ src: StaticImageData; alt: string }> = ({
   alt,
 }) => {
   return (
-    <div className="w-full flex justify-center items-center min-h-80 rounded-2xl border border-slate-200 relative">
+    <div className="w-full flex justify-center items-center min-h-80 rounded-2xl border border-slate-200 relative overflow-hidden">
       <Image
         src={src}
         alt={alt}
-        className="object-cover rounded-[8px] px-8 md:px-32 py-4"
+        className="object-contain rounded-[8px] p-4"
         layout="fill"
+        priority
       />
     </div>
   );
@@ -41,7 +42,7 @@ const KehidupanMahasiswaCard: React.FC<{
   );
 
   return (
-    <div className="w-full min-h-[700px] lg:min-h-[100px] rounded-lg p-4 border border-slate-200 space-y-6 hover:border-primary-500 transform transition-all ease-in-out duration-300 hover:shadow-lg">
+    <div className="w-full min-h-[700px] lg:min-h-[100px] rounded-lg p-4  border border-slate-200 space-y-6 hover:border-primary-500 transform transition-all ease-in-out duration-300 hover:shadow-lg">
       {data.image && <CardImage src={data.image} alt={data.title} />}
 
       <div className="flex flex-col justify-between space-y-6">
