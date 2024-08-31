@@ -36,7 +36,7 @@ export default function Navbar() {
         <Link href="/">
           <Image
             src={upnvj}
-            className="w-[50px] md:min-w-[80px] lg:min-w-[100px]"
+            className="w-[50px] md:min-w-[80px] lg:min-w-[100px] p-3 pr-5 border-r-4 border-primary-500"
             alt="logo"
           />
         </Link>

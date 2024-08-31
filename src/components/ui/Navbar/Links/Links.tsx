@@ -27,7 +27,7 @@ const Links = ({
       menu: [
         {
           name: "Tentang FIK",
-          path: "/",
+          path: "/tentang-fik",
         },
         {
           name: "Manajemen",
@@ -44,19 +44,19 @@ const Links = ({
       menu: [
         {
           name: "Sarjana Informatika",
-          path: "/",
+          path: "/program-studi/sarjana-informatika",
         },
         {
           name: "Sarjana Sains Data",
-          path: "/manajemen",
+          path: "/program-studi/sarjana-sains",
         },
         {
           name: "Sarjana Sistem Informasi",
-          path: "/staf-pengajar",
+          path: "/program-studi/sarjana-sistem-informasi",
         },
         {
           name: "Diploma Sistem Informasi",
-          path: "/staf-pengajar",
+          path: "/program-studi/diploma-sistem-informasi",
         },
       ],
     },
@@ -65,19 +65,19 @@ const Links = ({
       menu: [
         {
           name: "Kehidupan Kampus",
-          path: "/",
+          path: "/kehidupan-kampus",
         },
         {
           name: "Prestasi Mahasiswa",
-          path: "/manajemen",
+          path: "/prestasi-mahasiswa",
         },
         {
           name: "Layanan Mahasiswa",
-          path: "/staf-pengajar",
+          path: "/layanan-mahasiswa",
         },
         {
           name: "Beasiswa",
-          path: "/staf-pengajar",
+          path: "/beasiswa",
         },
       ],
     },

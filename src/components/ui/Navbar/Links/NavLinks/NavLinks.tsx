@@ -87,7 +87,7 @@ const NavLinks = ({ item }: { item: item }) => {
                         href={v.path}
                         className={`text-start ${
                           pathName === v.path && styles.active
-                        } text-[18px] block font-bold hover:bg-primary-500 hover:text-white p-2 rounded-lg text-nowrap transition-all transform ease-in-out`}
+                        } text-[18px] block font-bold hover:bg-primary-500 hover:text-white p-4 rounded-lg text-nowrap transition-all transform ease-in-out`}
                       >
                         {v.name}
                       </Link>
