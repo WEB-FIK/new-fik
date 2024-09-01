@@ -105,7 +105,7 @@ const Links = ({
       <div
         className={`${
           value === null && "hidden"
-        } gap-x-6 gap-y-4 py-4 md:!gap-4 !gap-8   flex md:flex-row flex-col flex-wrap`}
+        }  gap-x-6 gap-y-4 py-4 md:!gap-4 !gap-8   flex md:flex-row flex-col flex-wrap`}
       >
         {links[value as number]?.menu?.map((v, i) => {
           return <NavLinks item={v} key={v.name} />;
@@ -115,7 +115,7 @@ const Links = ({
       <div
         className={`${
           value !== null && "hidden"
-        } gap-x-6 gap-y-4 py-4 md:!gap-4 !gap-8  flex md:flex-row flex-col flex-wrap`}
+        } gap-x-4 gap-y-4 py-4 md:!gap-4 !gap-8 flex md:flex-row flex-col flex-wrap`}
       >
         {links.map((link, index) => {
           return (

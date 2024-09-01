@@ -13,7 +13,7 @@ export default function Navbar() {
   const [select, setSelect] = useState<number | null>(null);
 
   return (
-    <nav className="justify-between   w-full py-4 h-fit md:h-[180px] sticky top-0 z-10 bg-white flex items-center md:px-[20px] lg:px-[100px]">
+    <nav className="justify-between w-full py-4 h-fit md:h-32 sticky top-0 z-10 bg-white flex items-center md:px-2 lg:px-3">
       <>
         <div
           className={`${select !== null && "hidden"} text-2xl pl-4 md:hidden`}
@@ -32,15 +32,15 @@ export default function Navbar() {
           <IoCloseOutline />
         </div>
       </>
-      <div className="flex items-center gap-2 md:gap-0 mx-auto justify-between">
+      <div className="flex items-center gap-2 md:gap-0 justify-between">
         <Link href="/">
           <Image
             src={upnvj}
-            className="w-[50px] md:min-w-[80px] lg:min-w-[100px] p-3 pr-5 border-r-4 border-primary-500"
+            className="w-10 md:min-w-[80px] lg:min-w-[100px] p-3 pr-5 border-r-4 border-primary-500"
             alt="logo"
           />
         </Link>
-        <div className="md:px-6 space-y-2 font-bold  text-sm md:text-[20px] text-primary-500">
+        <div className="md:px-6 space-y-2 font-bold  text-sm md:text-base text-primary-500">
           <p className="text-nowrap">FAKULTAS ILMU KOMPUTER</p>
           <p>VETERAN JAKARTA</p>
         </div>
