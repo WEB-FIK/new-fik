@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import OurValuesCard from "@/components/ui/OurValuesCard/OurValuesCard";
@@ -17,9 +17,12 @@ function OurValues() {
   }, []);
 
   return (
-    <section className="min-h-screen md:min-h-[550px] space-y-5 md:py-8">
-      <div className="px-4 py-8 md:flex-col md:justify-center md:space-y-6 md:px-[116px] md:hidden" data-aos="fade-down">
-        <div className="flex flex-row items-center justify-between" >
+    <section className=" overflow-hidden min-h-screen md:min-h-[550px] space-y-5 md:py-8">
+      <div
+        className="px-4 py-8 md:flex-col md:justify-center md:space-y-6 md:px-[116px] md:hidden"
+        data-aos="fade-down"
+      >
+        <div className="flex flex-row items-center justify-between">
           <p className="text-[24px] font-extrabold">Our Values</p>
           <hr className="min-w-[60%] border-primary-500 rounded-xl border-[3px]" />
         </div>
@@ -37,10 +40,14 @@ function OurValues() {
         </div>
         <div className="hidden md:block" data-aos="fade-down">
           <p className="text-[20px] text-white">
-            Nilai-nilai yang diterapkan di dalam Fakultas Ilmu Komputer UPN Veteran Jakarta.{" "}
+            Nilai-nilai yang diterapkan di dalam Fakultas Ilmu Komputer UPN
+            Veteran Jakarta.{" "}
           </p>
         </div>
-        <div className="space-y-5 flex flex-col justify-center items-center md:flex md:flex-row md:gap-x-5 md:space-y-0" data-aos="fade-up">
+        <div
+          className="space-y-5 flex flex-col justify-center items-center md:flex md:flex-row md:gap-x-5 md:space-y-0"
+          data-aos="fade-up"
+        >
           <OurValuesCard image={ZonaIntegritas} />
           <OurValuesCard image={StopKorupsi} />
           <OurValuesCard image={TolakGratifikasi} />

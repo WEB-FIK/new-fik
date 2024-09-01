@@ -27,7 +27,7 @@ const Links = ({
       menu: [
         {
           name: "Tentang FIK",
-          path: "/",
+          path: "/tentang-fik",
         },
         {
           name: "Manajemen",
@@ -44,19 +44,19 @@ const Links = ({
       menu: [
         {
           name: "Sarjana Informatika",
-          path: "/",
+          path: "/program-studi/sarjana-informatika",
         },
         {
           name: "Sarjana Sains Data",
-          path: "/manajemen",
+          path: "/program-studi/sarjana-sains",
         },
         {
           name: "Sarjana Sistem Informasi",
-          path: "/staf-pengajar",
+          path: "/program-studi/sarjana-sistem-informasi",
         },
         {
           name: "Diploma Sistem Informasi",
-          path: "/staf-pengajar",
+          path: "/program-studi/diploma-sistem-informasi",
         },
       ],
     },
@@ -65,19 +65,19 @@ const Links = ({
       menu: [
         {
           name: "Kehidupan Kampus",
-          path: "/",
+          path: "/kehidupan-kampus",
         },
         {
           name: "Prestasi Mahasiswa",
-          path: "/manajemen",
+          path: "/prestasi-mahasiswa",
         },
         {
           name: "Layanan Mahasiswa",
-          path: "/staf-pengajar",
+          path: "/layanan-mahasiswa",
         },
         {
           name: "Beasiswa",
-          path: "/staf-pengajar",
+          path: "/beasiswa",
         },
       ],
     },
@@ -105,7 +105,7 @@ const Links = ({
       <div
         className={`${
           value === null && "hidden"
-        } gap-x-6 gap-y-4 py-4 md:!gap-4 !gap-8   flex md:flex-row flex-col flex-wrap`}
+        }  gap-x-6 gap-y-4 py-4 md:!gap-4 !gap-8   flex md:flex-row flex-col flex-wrap`}
       >
         {links[value as number]?.menu?.map((v, i) => {
           return <NavLinks item={v} key={v.name} />;
@@ -115,7 +115,7 @@ const Links = ({
       <div
         className={`${
           value !== null && "hidden"
-        } gap-x-6 gap-y-4 py-4 md:!gap-4 !gap-8  flex md:flex-row flex-col flex-wrap`}
+        } gap-x-4 gap-y-4 py-4 md:!gap-4 !gap-8 flex md:flex-row flex-col flex-wrap`}
       >
         {links.map((link, index) => {
           return (

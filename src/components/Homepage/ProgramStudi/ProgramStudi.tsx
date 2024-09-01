@@ -17,7 +17,7 @@ export default function ProgramStudi() {
     });
   }, []);
   return (
-    <section className="px-4 py-8 min-h-screen space-y-3 md:px-[116px] md:flex md:flex-col md:justify-center md:space-y-8">
+    <section className="overflow-hidden px-4 py-8 min-h-screen space-y-3 md:px-[116px] md:flex md:flex-col md:justify-center md:space-y-8">
       <div
         className="flex flex-row items-center justify-between"
         data-aos="fade-down"

@@ -14,8 +14,6 @@ import SarasGroup from "../../../../public/images/SarasGroup.webp";
 import Huawei from "../../../../public/images/Huawei.webp";
 import SariTeknologi from "../../../../public/images/SariTeknologi.webp";
 
-
-
 function Partner() {
   const partnerImagesTop = [
     CNPlus,
@@ -37,7 +35,7 @@ function Partner() {
   ];
 
   return (
-    <section className="min-h-screen space-y-5 md:min-h-[600px] bg-[#EDEDED]">
+    <section className="overflow-hidden min-h-screen space-y-5 md:min-h-[600px] bg-[#EDEDED]">
       <div className="px-4 py-8 md:px-[116px] md:flex md:flex-col md:justify-center md:space-y-8">
         <div className="flex flex-row-reverse items-center justify-between">
           <p className="text-[24px] font-extrabold md:text-[42px]">Mitra</p>
@@ -54,7 +52,7 @@ function Partner() {
 
       <div className="flex flex-col items-center justify-center space-y-5">
         <PartnersSlider images={partnerImagesTop} />
-        <PartnersSlider images={partnerImagesBot} direction="right"/>
+        <PartnersSlider images={partnerImagesBot} direction="right" />
       </div>
     </section>
   );

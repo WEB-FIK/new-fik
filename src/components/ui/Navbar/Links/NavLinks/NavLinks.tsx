@@ -42,7 +42,7 @@ const NavLinks = ({ item }: { item: item }) => {
   }, []);
   return (
     <div
-      className={`${styles.container} px-8 md:px-[14px] relative   items-center text-[18px] font-bold flex gap-2`}
+      className={`${styles.container} px-4 md:px-[14px] relative items-center text-[18px] font-bold flex gap-2`}
       onMouseEnter={handleMouseEnter}
       onClick={() => {
         if (showDropdown) {
@@ -58,14 +58,14 @@ const NavLinks = ({ item }: { item: item }) => {
           href={item.path}
           className={`${styles.link} ${
             pathName === item.path && styles.active
-          } text-base md:text-[18px] font-bold hover:text-primary-500 transition-all transform ease-in-out`}
+          } text-base md:text-base font-bold hover:text-primary-500 transition-all transform ease-in-out`}
         >
           {item.name}
         </Link>
       ) : (
-        <div className="flex gap-2 items-center md:w-auto w-full justify-between text-base md:text-[18px]">
+        <div className="flex gap-2 items-center md:w-auto w-full justify-between text-base md:text-sm">
           <span
-            className="hover:text-primary-500 transition-all transform ease-in-out"
+            className="text-base hover:text-primary-500 transition-all transform ease-in-out"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
@@ -87,7 +87,7 @@ const NavLinks = ({ item }: { item: item }) => {
                         href={v.path}
                         className={`text-start ${
                           pathName === v.path && styles.active
-                        } text-[18px] block font-bold hover:bg-primary-500 hover:text-white p-2 rounded-lg text-nowrap transition-all transform ease-in-out`}
+                        } text-base block font-bold hover:bg-primary-500 hover:text-white p-4 rounded-lg text-nowrap transition-all transform ease-in-out`}
                       >
                         {v.name}
                       </Link>
