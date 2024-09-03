@@ -1,25 +1,20 @@
-import ProgramStudiHeader from '@/components/ProgramStudi/SarjanaSistemInformasi/Header/ProgramStudiHeader'
-import HeroSection from '@/components/ProgramStudi/SarjanaSistemInformasi/HeroSection/HeroSection'
-import ProfilLulusan from '@/components/ProgramStudi/ProfilLulusan/ProfilLulusan'
-import React from 'react'
-import CapaianPembelajaranLulusan from '@/components/ProgramStudi/SarjanaSistemInformasi/CapaianPembelajaranLulusan/CapaianPembelajaranLulusan'
-import LamaStudi from '@/components/ProgramStudi/LamaStudi/LamaStudi'
-import KurikulumSarjanaSistemInformasi from '@/components/ProgramStudi/SarjanaSistemInformasi/KurikulumSarjanaSistemInformasi/KurikulumSarjanaSistemInformasi'
-import Peminatan from '@/components/ProgramStudi/SarjanaSistemInformasi/Peminatan/Peminatan'
-import FAQ from '@/components/ProgramStudi/FAQs/FAQ'
+import ManajemenHeader from "@/components/Manajemen/Header/Header";
+import StrukturDekanat from "@/components/Manajemen/StrukturDekanat/StrukturDekanat";
+import StrukturKaprodi from "@/components/Manajemen/StrukturKaprodi/StrukturKaprodi";
+import StrukturKepalaLab from "@/components/Manajemen/StrukturKepalaLab/StrukturKepalaLab";
+import StrukturTataUsaha from "@/components/Manajemen/StrukturTataUsaha/StrukturTataUsaha";
+import React from "react";
+
 function page() {
   return (
     <div>
-        <ProgramStudiHeader />
-        <HeroSection/>
-        <ProfilLulusan/>
-        <CapaianPembelajaranLulusan/>
-        <LamaStudi/>
-        <KurikulumSarjanaSistemInformasi/>
-        <Peminatan/>
-        <FAQ/>
+      <ManajemenHeader />
+      <StrukturDekanat />
+      <StrukturKaprodi />
+      <StrukturTataUsaha />
+      <StrukturKepalaLab />
     </div>
-  )
+  );
 }
 
-export default page
+export default page;
