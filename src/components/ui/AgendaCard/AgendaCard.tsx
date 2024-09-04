@@ -30,7 +30,7 @@ function AgendaCard({
 }: AgendaProps) {
   const truncatedAgendaTitle = truncateText(AgendaTitle, 10);
   return (
-    <div className="w-[358px] min-h-[486px] border border-[#D4D2E3] rounded-[16px] px-5 py-7 space-y-[22px]">
+    <div className="w-[358px] min-h-[486px] border border-[#D4D2E3] rounded-[16px] px-5 py-7 space-y-[22px] hover:border-primary-500 transform transition-all hover:shadow-xl duration-500 ease-in-out">
       <div>
         <Image className="rounded-[8px]" src={image} alt="agenda" />
       </div>
@@ -40,8 +40,10 @@ function AgendaCard({
           <p className="font-bold text-[18px] mb-2">{AgendaMonth}</p>
         </div>
 
-        <div className="space-y-3">
-          <p className="text-[18px] font-semibold">{truncatedAgendaTitle}</p>
+        <div className="space-y-3 text-left">
+          <p className="text-[18px] font-semibold text-left">
+            {truncatedAgendaTitle}
+          </p>
           <div className="flex items-center space-x-2">
             <ClockIcon />
             <p className="text-[14px] text-[#6B7280] font-semibold">
