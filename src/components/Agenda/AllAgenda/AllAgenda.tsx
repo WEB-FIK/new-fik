@@ -1,7 +1,7 @@
 "use client";
 
-import SectionHeader from "@/components/ui/SectionHeader/SectionHeader";
 import React, { useState } from "react";
+import SectionHeader from "@/components/ui/SectionHeader/SectionHeader";
 import AgendaCard from "@/components/ui/AgendaCard/AgendaCard";
 import Pagination from "@/components/ui/Pagination/Pagination";
 import { agendaItems } from "@/data/dataAgenda";
@@ -24,7 +24,7 @@ function AllAgenda() {
     <section className="w-full px-4 py-8 flex flex-col justify-center space-y-5 md:px-[100px] md:min-h-[400px] overflow-x-scroll">
       <SectionHeader title="Semua Agenda" subtitle="" textAlign="right" />
       <div className="w-full gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        {agendaItems.map((item, index) => (
+        {currentItems.map((item, index) => (
           <AgendaCard
             key={index}
             image={item.imageSrc}
@@ -33,6 +33,7 @@ function AllAgenda() {
             AgendaTitle={item.AgendaTitle}
             AgendaHour={item.AgendaHour}
             AgendaLocation={item.AgendaLocation}
+            slug={item.slug}
           />
         ))}
       </div>
