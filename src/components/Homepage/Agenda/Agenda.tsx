@@ -41,8 +41,8 @@ function Agenda() {
               AgendaMonth="Feb"
               AgendaTitle="Seminar Nasional Mahasiswa Bidang Ilmu Komputer dan Aplikasinya (SENAMIKA) – 7"
               AgendaHour="10:00 WIB - 16:00 WIB"
-              AgendaLocation="Auditorium Bhineka Tunggal Ika UPN “Veteran” Jakarta
-          "
+              AgendaLocation="Auditorium Bhineka Tunggal Ika UPN “Veteran” Jakarta"
+              slug="seminar-nasional-senamika-7"
             />
           </div>
           <div>
@@ -54,6 +54,7 @@ function Agenda() {
               AgendaHour="10:00 WIB - 16:00 WIB"
               AgendaLocation="Auditorium Bhineka Tunggal Ika UPN “Veteran” Jakarta
           "
+              slug="seminar-nasional-senamika-7"
             />
           </div>
 
@@ -66,6 +67,7 @@ function Agenda() {
               AgendaHour="10:00 WIB - 16:00 WIB"
               AgendaLocation="Auditorium Bhineka Tunggal Ika UPN “Veteran” Jakarta
           "
+              slug="seminar-nasional-senamika-7"
             />
           </div>
         </div>
