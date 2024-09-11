@@ -1,5 +1,6 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import ClockIcon from "../../../components/Icons/Clock";
 import LocationIcon from "../../../components/Icons/Location";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
@@ -11,6 +12,7 @@ interface AgendaProps {
   AgendaTitle: string;
   AgendaHour: string;
   AgendaLocation: string;
+  slug: string; // Add slug prop
 }
 
 function truncateText(text: string, wordLimit: number): string {
@@ -20,6 +22,7 @@ function truncateText(text: string, wordLimit: number): string {
   }
   return text;
 }
+
 function AgendaCard({
   image,
   AgendaDate,
@@ -27,37 +30,43 @@ function AgendaCard({
   AgendaTitle,
   AgendaHour,
   AgendaLocation,
+  slug, // Add slug prop
 }: AgendaProps) {
   const truncatedAgendaTitle = truncateText(AgendaTitle, 10);
+
   return (
-    <div className="w-[358px] min-h-[486px] border border-[#D4D2E3] rounded-[16px] px-5 py-7 space-y-[22px]">
-      <div>
-        <Image className="rounded-[8px]" src={image} alt="agenda" />
-      </div>
-      <div className="flex space-x-4 justify-between">
-        <div className="flex flex-col border-r-primary-500 pr-4 border-r-[3px] w-[76px] h-[78px] items-center justify-center">
-          <p className="text-primary-500 text-[40px] font-bold">{AgendaDate}</p>
-          <p className="font-bold text-[18px] mb-2">{AgendaMonth}</p>
+    <Link href={`/agenda/${slug}`}>
+      <div className="w-[358px] min-h-[486px] border border-[#D4D2E3] rounded-[16px] px-5 py-7 space-y-[22px] hover:border-primary-500 transform transition-all hover:shadow-xl duration-500 ease-in-out">
+        <div>
+          <Image className="rounded-[8px]" src={image} alt="agenda" />
         </div>
-
-        <div className="space-y-3">
-          <p className="text-[18px] font-semibold">{truncatedAgendaTitle}</p>
-          <div className="flex items-center space-x-2">
-            <ClockIcon />
-            <p className="text-[14px] text-[#6B7280] font-semibold">
-              {AgendaHour}
+        <div className="flex space-x-4 justify-between">
+          <div className="flex flex-col border-r-primary-500 pr-4 border-r-[3px] w-[76px] h-[78px] items-center justify-center">
+            <p className="text-primary-500 text-[40px] font-bold">
+              {AgendaDate}
             </p>
+            <p className="font-bold text-[18px] mb-2">{AgendaMonth}</p>
           </div>
-
-          <div className="flex items-center space-x-2">
-            <LocationIcon />
-            <p className="text-[14px] text-[#6B7280] font-semibold pl-1">
-              {AgendaLocation}
+          <div className="space-y-3 text-left">
+            <p className="text-[18px] font-semibold text-left">
+              {truncatedAgendaTitle}
             </p>
+            <div className="flex items-center space-x-2">
+              <ClockIcon />
+              <p className="text-[14px] text-[#6B7280] font-semibold">
+                {AgendaHour}
+              </p>
+            </div>
+            <div className="flex items-center space-x-2">
+              <LocationIcon />
+              <p className="text-[14px] text-[#6B7280] font-semibold pl-1">
+                {AgendaLocation}
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
