@@ -8,6 +8,7 @@ interface agendaItemProps {
   AgendaTitle: string;
   AgendaHour: string;
   AgendaLocation: string;
+  slug: string;
 }
 
 export const agendaItems: agendaItemProps[] = [
@@ -19,6 +20,7 @@ export const agendaItems: agendaItemProps[] = [
       "Seminar Nasional Mahasiswa Bidang Ilmu Komputer dan Aplikasinya (SENAMIKA) – 7",
     AgendaHour: "10:00 WIB - 16:00 WIB",
     AgendaLocation: "Auditorium Bhineka Tunggal Ika UPN “Veteran” Jakarta",
+    slug: "seminar-nasional-senamika-7",
   },
   {
     imageSrc: RektoratUPN,
@@ -28,6 +30,7 @@ export const agendaItems: agendaItemProps[] = [
       "Seminar Nasional Mahasiswa Bidang Ilmu Komputer dan Aplikasinya (SENAMIKA) – 7",
     AgendaHour: "10:00 WIB - 16:00 WIB",
     AgendaLocation: "Auditorium Bhineka Tunggal Ika UPN “Veteran” Jakarta",
+    slug: "seminar-nasional-senamika-7",
   },
   {
     imageSrc: RektoratUPN,
@@ -37,6 +40,7 @@ export const agendaItems: agendaItemProps[] = [
       "Seminar Nasional Mahasiswa Bidang Ilmu Komputer dan Aplikasinya (SENAMIKA) – 7",
     AgendaHour: "10:00 WIB - 16:00 WIB",
     AgendaLocation: "Auditorium Bhineka Tunggal Ika UPN “Veteran” Jakarta",
+    slug: "seminar-nasional-senamika-7",
   },
   {
     imageSrc: RektoratUPN,
@@ -46,6 +50,7 @@ export const agendaItems: agendaItemProps[] = [
       "Seminar Nasional Mahasiswa Bidang Ilmu Komputer dan Aplikasinya (SENAMIKA) – 7",
     AgendaHour: "10:00 WIB - 16:00 WIB",
     AgendaLocation: "Auditorium Bhineka Tunggal Ika UPN “Veteran” Jakarta",
+    slug: "seminar-nasional-senamika-7",
   },
   {
     imageSrc: RektoratUPN,
@@ -55,5 +60,6 @@ export const agendaItems: agendaItemProps[] = [
       "Seminar Nasional Mahasiswa Bidang Ilmu Komputer dan Aplikasinya (SENAMIKA) – 7",
     AgendaHour: "10:00 WIB - 16:00 WIB",
     AgendaLocation: "Auditorium Bhineka Tunggal Ika UPN “Veteran” Jakarta",
+    slug: "seminar-nasional-senamika-7",
   },
 ];
